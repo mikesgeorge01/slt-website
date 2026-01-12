@@ -145,7 +145,6 @@ export default function App() {
       Bio
     </button>
   </div>
-</div>
         </div>
       </section>
 
