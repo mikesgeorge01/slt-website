@@ -49,6 +49,7 @@ export default function App() {
             <NavLink to="bio">Bio</NavLink>
             <NavLink to="stories">Stories</NavLink>
             <NavLink to="speaking">Speaking</NavLink>
+            <NavLink to="news">News</NavLink>
             <NavLink to="contact">Contact</NavLink>
           </nav>
 
@@ -212,7 +213,7 @@ This is my journey.
       {/* Stories */}
       <section id="stories" className="border-t border-slate-200 bg-slate-50">
         <div className="mx-auto max-w-6xl px-4 py-14">
-          <h2 className="text-2xl font-bold tracking-tight">Stories & themes</h2>
+          <h2 className="text-2xl font-bold tracking-tight">Stories & Themes</h2>
           <p className="mt-4 max-w-3xl text-slate-600">
             What I’ve learned along the way, practical frameworks, honest thinking, and leadership stories to help others create impact.
           </p>
@@ -281,10 +282,10 @@ This is my journey.
       <div className="rounded-3xl border border-slate-200 bg-white p-6">
         <div className="text-sm font-semibold">SLT launch</div>
         <p className="mt-2 text-sm text-slate-600">
-          Scars, Lessons & Triumphs is now live — a platform for sharing leadership
+          Scars, Lessons & Triumphs is now live, a platform for sharing leadership
           experience from the procurement front line.
         </p>
-        <div className="mt-3 text-xs text-slate-500">September 2026</div>
+        <div className="mt-3 text-xs text-slate-500">January 2026</div>
       </div>
 
       <div className="rounded-3xl border border-slate-200 bg-white p-6">
