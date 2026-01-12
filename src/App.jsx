@@ -118,7 +118,7 @@ export default function App() {
 
             {/* Photo */}
 <div className="flex justify-center lg:justify-end">
-  <div className="flex flex-col items-center gap-6">
+  <div className="flex flex-col items-center gap-4">
     <div className="relative">
       <img
         src="/mike.jpg"
@@ -140,12 +140,12 @@ export default function App() {
       onClick={() =>
         document.getElementById("bio")?.scrollIntoView({ behavior: "smooth" })
       }
-      className="rounded-2xl slt-accent-bg px-8 py-2 text-sm font-semibold text-white shadow hover:opacity-90 transition"
+      className="rounded-2xl bg-amber-500 px-8 py-2 text-sm font-semibold text-white shadow hover:bg-amber-600 transition"
     >
       Bio
     </button>
   </div>
-        </div>
+</div>
       </section>
 
       {/* About */}
