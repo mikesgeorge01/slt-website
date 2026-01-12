@@ -144,7 +144,7 @@ export default function App() {
                     className="h-[300px] w-[240px] rounded-3xl object-cover shadow-lg sm:h-[380px] sm:w-[300px]"
                   />
 
-                  <div className="absolute -bottom-10 left-1/2 w-[90%] -translate-x-1/2 rounded-2xl border border-slate-200 bg-white/90 p-3">
+                  <div className="absolute -bottom-6 left-1/2 w-[90%] -translate-x-1/2 rounded-2xl border border-slate-200 bg-white/90 p-3">
                     <div className="text-sm font-semibold">Mike George</div>
                     <div className="text-xs text-slate-600 whitespace-nowrap">
                       Founder • SLT – Scars, Lessons & Triumphs
