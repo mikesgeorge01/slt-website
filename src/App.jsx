@@ -219,10 +219,10 @@ This is my journey.
 
           <div className="mt-10 grid gap-4 md:grid-cols-2">
             {[
-              { title: "Discipline & Consistency", desc: "Showing up daily. Doing the work when you don’t want to." },
-              { title: "Influence without authority", desc: "How to move decisions through trust, clarity, and relationships." },
+              { title: "Organistional Performance", desc: "Turning intent into delivery across people, process, and partners." },
+              { title: "Personal Development", desc: "Learning how to think clearly, build confidence, and show up better, in work and in life." },
               { title: "Procurement as value", desc: "Beyond savings, risk, delivery, outcomes, and stakeholder confidence." },
-              { title: "Leadership under pressure", desc: "Calm, accountability, and standards when it gets uncomfortable." },
+              { title: "Leadership that inspires", desc: "Calm, accountability, and standards when it gets uncomfortable." },
             ].map((item) => (
               <div key={item.title} className="rounded-3xl border border-slate-200 bg-white p-6">
                 <div className="text-sm font-semibold">{item.title}</div>
