@@ -72,7 +72,7 @@ export default function App() {
                 <Pill>Real Stories</Pill>
               </div>
 
-              <h1 className="mt-6 text-4xl font-extrabold tracking-tight sm:text-5xl">
+              <h1 className="mt-6 text-4xl font-extrabold tracking-tight leading-none sm:text-5xl sm:whitespace-nowrap">
   Scars. Lessons. <span className="slt-accent">Triumphs.</span>
 </h1>
 <div className="mt-4 h-1 w-20 rounded-full slt-accent-bg"></div>
