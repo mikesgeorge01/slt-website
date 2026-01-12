@@ -152,17 +152,6 @@ export default function App() {
                   </div>
                 </div>
 
-                <button
-                  type="button"
-                  onClick={() =>
-                    document
-                      .getElementById("bio")
-                      ?.scrollIntoView({ behavior: "smooth" })
-                  }
-                  className="rounded-2xl bg-amber-500 px-10 py-3 text-sm font-semibold text-white shadow hover:bg-amber-600 transition"
-                >
-                  Bio
-                </button>
               </div>
             </div>
           </div>
