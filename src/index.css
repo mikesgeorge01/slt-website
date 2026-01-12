@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+:root {
+  --slt-accent: 14 165 233; /* cyan-ish accent */
+}
+
+body {
+  @apply bg-slate-50 text-slate-900;
+}
