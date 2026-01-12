@@ -147,7 +147,7 @@ export default function App() {
                   <div className="absolute -bottom-1 left-1/2 w-[90%] -translate-x-1/2 rounded-2xl border border-slate-200 bg-white/90 p-3">
                     <div className="text-sm font-semibold">Mike George</div>
                     <div className="text-xs text-slate-600 whitespace-nowrap">
-                      Founder of SLT
+                      Senior Director & Founder of SLT
                     </div>
                   </div>
                 </div>
