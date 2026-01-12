@@ -178,7 +178,7 @@ export default function App() {
 
 I began my career in 1987 as an engineering apprentice with Shell. Nearly four decades later, I’ve worked across engineering and procurement, spending 25+ years in senior procurement leadership roles and learning from exceptional people along the way.
 
-I don’t claim perfection or ego—only experience. The scars earned, lessons learned, and triumphs achieved have shaped my values, my leadership, and my perspective on success.
+I don’t claim perfection or ego, only experience. The scars earned, lessons learned, and triumphs achieved have shaped my values, my leadership, and my perspective on success.
 
 SLT is my way of giving back: sharing real experiences to support, challenge, and inspire those navigating their own careers.
 
