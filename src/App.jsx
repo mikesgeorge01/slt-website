@@ -35,7 +35,7 @@ export default function App() {
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
           <div className="flex items-center gap-3">
             {/* Bigger logo: change h-14 to h-16 / h-20 if you want */}
-            <img src="/logo.png" alt="SLT logo" className="h-14 w-auto" />
+            <img src="/logo.png" alt="SLT logo" className="h-16 w-auto" />
             <div className="hidden sm:block">
               <div className="text-sm font-semibold leading-tight">SLT</div>
               <div className="text-xs text-slate-500 leading-tight">Scars • Lessons • Triumphs</div>
