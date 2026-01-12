@@ -34,17 +34,19 @@ export default function App() {
       <header className="sticky top-0 z-50 w-full border-b border-slate-200/70 bg-white/85 backdrop-blur-xl">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
           <div className="flex items-center gap-3">
-            {/* Bigger logo: change h-14 to h-16 / h-20 if you want */}
             <img src="/logo.png" alt="SLT logo" className="h-24 w-auto" />
             <div className="hidden sm:block">
               <div className="text-sm font-semibold leading-tight">SLT</div>
-              <div className="text-xs text-slate-500 leading-tight">Scars • Lessons • Triumphs</div>
+              <div className="text-xs text-slate-500 leading-tight">
+                Scars • Lessons • Triumphs
+              </div>
             </div>
           </div>
 
           <nav className="hidden md:flex items-center gap-1">
             <NavLink to="home">Home</NavLink>
             <NavLink to="about">About</NavLink>
+            <NavLink to="bio">Bio</NavLink>
             <NavLink to="stories">Stories</NavLink>
             <NavLink to="speaking">Speaking</NavLink>
             <NavLink to="contact">Contact</NavLink>
@@ -65,6 +67,7 @@ export default function App() {
       <section id="home" className="relative">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:py-20">
           <div className="grid items-center gap-10 lg:grid-cols-2">
+            {/* Left column */}
             <div>
               <div className="flex flex-wrap gap-2">
                 <Pill>Leadership</Pill>
@@ -73,19 +76,24 @@ export default function App() {
               </div>
 
               <h1 className="mt-6 text-4xl font-extrabold tracking-tight leading-none sm:text-5xl sm:whitespace-nowrap">
-  Scars. Lessons. <span className="slt-accent">Triumphs.</span>
-</h1>
-<div className="mt-4 h-1 w-20 rounded-full slt-accent-bg"></div>
+                Scars. Lessons. <span className="slt-accent">Triumphs.</span>
+              </h1>
+              <div className="mt-4 h-1 w-20 rounded-full slt-accent-bg"></div>
 
               <p className="mt-5 text-lg text-slate-600">
-                A leadership focussed platform sharing leadership lessons from the procurement trenches, hard-earned experience,
-                and practical insight, delivered with honesty, intent, and purpose.
+                A leadership focussed platform sharing leadership lessons from the
+                procurement trenches, hard-earned experience, and practical
+                insight, delivered with honesty, intent, and purpose.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-3">
                 <button
                   type="button"
-                  onClick={() => document.getElementById("stories")?.scrollIntoView({ behavior: "smooth" })}
+                  onClick={() =>
+                    document
+                      .getElementById("stories")
+                      ?.scrollIntoView({ behavior: "smooth" })
+                  }
                   className="rounded-2xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white hover:opacity-95"
                 >
                   Explore stories
@@ -93,7 +101,11 @@ export default function App() {
 
                 <button
                   type="button"
-                  onClick={() => document.getElementById("speaking")?.scrollIntoView({ behavior: "smooth" })}
+                  onClick={() =>
+                    document
+                      .getElementById("speaking")
+                      ?.scrollIntoView({ behavior: "smooth" })
+                  }
                   className="rounded-2xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-800 hover:bg-slate-50"
                 >
                   Speaking
@@ -103,49 +115,68 @@ export default function App() {
               <div className="mt-8 grid gap-3 sm:grid-cols-3">
                 <div className="rounded-3xl border border-slate-200 bg-white p-4">
                   <div className="text-xs font-semibold text-slate-500">Focus</div>
-                  <div className="mt-1 text-sm font-semibold">Business → Team → Individual</div>
+                  <div className="mt-1 text-sm font-semibold">
+                    Business → Team → Individual
+                  </div>
                 </div>
                 <div className="rounded-3xl border border-slate-200 bg-white p-4">
                   <div className="text-xs font-semibold text-slate-500">Style</div>
-                  <div className="mt-1 text-sm font-semibold">Supportive • Respectful • Real</div>
+                  <div className="mt-1 text-sm font-semibold">
+                    Supportive • Respectful • Real
+                  </div>
                 </div>
                 <div className="rounded-3xl border border-slate-200 bg-white p-4">
                   <div className="text-xs font-semibold text-slate-500">Intent</div>
-                  <div className="mt-1 text-sm font-semibold">Teach • Challenge • Inspire</div>
+                  <div className="mt-1 text-sm font-semibold">
+                    Teach • Challenge • Inspire
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* Photo */}
-<div className="flex justify-center lg:justify-end">
-  <div className="flex flex-col items-center gap-4">
-    <div className="relative">
-      <img
-        src="/mike.jpg"
-        alt="Mike George"
-        className="h-[300px] w-[240px] rounded-3xl object-cover shadow-lg sm:h-[380px] sm:w-[300px]"
-      />
+            {/* Right column: Photo + Bio button */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="flex flex-col items-center gap-6">
+                <div className="relative">
+                  <img
+                    src="/mike.jpg"
+                    alt="Mike George"
+                    className="h-[300px] w-[240px] rounded-3xl object-cover shadow-lg sm:h-[380px] sm:w-[300px]"
+                  />
 
-      <div className="absolute -bottom-4 left-1/2 w-[90%] -translate-x-1/2 rounded-2xl border border-slate-200 bg-white/90 p-3">
-        <div className="text-sm font-semibold">Mike George</div>
-        <div className="text-xs text-slate-600 whitespace-nowrap">
-          Founder • SLT – Scars, Lessons & Triumphs
+                  <div className="absolute -bottom-4 left-1/2 w-[90%] -translate-x-1/2 rounded-2xl border border-slate-200 bg-white/90 p-3">
+                    <div className="text-sm font-semibold">Mike George</div>
+                    <div className="text-xs text-slate-600 whitespace-nowrap">
+                      Founder • SLT – Scars, Lessons & Triumphs
+                    </div>
+                  </div>
+                </div>
+
+                <button
+                  type="button"
+                  onClick={() =>
+                    document
+                      .getElementById("bio")
+                      ?.scrollIntoView({ behavior: "smooth" })
+                  }
+                  className="rounded-2xl bg-amber-500 px-10 py-3 text-sm font-semibold text-white shadow hover:bg-amber-600 transition"
+                >
+                  Bio
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    {/* Bio button */}
-    <button
-      type="button"
-      onClick={() =>
-        document.getElementById("bio")?.scrollIntoView({ behavior: "smooth" })
-      }
-      className="rounded-2xl bg-amber-500 px-8 py-2 text-sm font-semibold text-white shadow hover:bg-amber-600 transition"
-    >
-      Bio
-    </button>
-  </div>
-</div>
+      {/* Bio (target for the button) */}
+      <section id="bio" className="border-t border-slate-200">
+        <div className="mx-auto max-w-6xl px-4 py-14">
+          <h2 className="text-2xl font-bold tracking-tight">Bio</h2>
+          <p className="mt-4 max-w-3xl text-slate-600">
+            (Add your bio text here. Keep it punchy and personal.)
+          </p>
+        </div>
       </section>
 
       {/* About */}
@@ -153,8 +184,9 @@ export default function App() {
         <div className="mx-auto max-w-6xl px-4 py-14">
           <h2 className="text-2xl font-bold tracking-tight">What SLT stands for</h2>
           <p className="mt-4 max-w-3xl text-slate-600">
-            SLT is about sharing real experiences from the front line, lessons learned through pressure,
-            mistakes, resilience, and wins. It’s leadership from my lived experience.
+            SLT is about sharing real experiences from the front line, lessons
+            learned through pressure, mistakes, resilience, and wins. It’s
+            leadership from my lived experience.
           </p>
 
           <div className="mt-10 grid gap-4 md:grid-cols-3">
@@ -220,7 +252,7 @@ export default function App() {
         <div className="mx-auto max-w-6xl px-4 py-14">
           <h2 className="text-2xl font-bold tracking-tight">Speaking</h2>
           <p className="mt-4 max-w-3xl text-slate-600">
-            I am available for keynotes, leadership sessions, procurement transformation talks, and team workshops, 
+            I am available for keynotes, leadership sessions, procurement transformation talks, and team workshops,
             all tailored to the audience and built to drive action.
           </p>
 
@@ -239,7 +271,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* Contact (simple for now; we’ll add real form later) */}
+      {/* Contact */}
       <section id="contact" className="border-t border-slate-200 bg-slate-50">
         <div className="mx-auto max-w-6xl px-4 py-14">
           <h2 className="text-2xl font-bold tracking-tight">Contact</h2>
