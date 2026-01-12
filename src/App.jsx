@@ -299,7 +299,7 @@ This is my journey.
 </section>
       
       {/* Contact */}
-      <section id="contact" className="border-t border-slate-200 bg-slate-50">
+      <section id="contact" className="border-t border-slate-200">
         <div className="mx-auto max-w-6xl px-4 py-14">
           <h2 className="text-2xl font-bold tracking-tight">Contact</h2>
           <p className="mt-4 max-w-3xl text-slate-600">
