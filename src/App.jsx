@@ -220,15 +220,21 @@ This is my journey.
 
           <div className="mt-10 grid gap-4 md:grid-cols-2">
             {[
-              { title: "Organistional Performance", desc: "Turning intent into delivery across people, process, and partners." },
-              { title: "Personal Development", desc: "Learning how to think clearly, build confidence, and show up better, in work and in life." },
-              { title: "Procurement as value", desc: "Beyond savings, risk, delivery, outcomes, and stakeholder confidence." },
-              { title: "Leadership that inspires", desc: "Calm, accountability, and standards when it gets uncomfortable." },
-            ].map((item) => (
-              <div key={item.title} className="rounded-3xl border border-slate-200 bg-white p-6">
-                <div className="text-sm font-semibold">{item.title}</div>
-                <p className="mt-2 text-sm text-slate-600">{item.desc}</p>
-              </div>
+  { title: "Organisational Performance", desc: "Turning intent into delivery across people, process, and partners.", to: "story-org" },
+  { title: "Personal Development", desc: "Learning how to think clearly, build confidence, and show up better, in work and in life.", to: "story-personal" },
+  { title: "Procurement as value", desc: "Beyond savings, risk, delivery, outcomes, and stakeholder confidence.", to: "story-procurement" },
+  { title: "Leadership that inspires", desc: "Calm, accountability, and standards when it gets uncomfortable.", to: "story-leadership" },
+].map((item) => (
+              <button
+  key={item.title}
+  type="button"
+  onClick={() => document.getElementById(item.to)?.scrollIntoView({ behavior: "smooth" })}
+  className="text-left rounded-3xl border border-slate-200 bg-white p-6 hover:shadow-md transition"
+>
+  <div className="text-sm font-semibold">{item.title}</div>
+  <p className="mt-2 text-sm text-slate-600">{item.desc}</p>
+  <div className="mt-4 text-xs font-semibold text-amber-600">Read more →</div>
+</button>
             ))}
           </div>
 
