@@ -251,6 +251,43 @@ This is my journey.
         </div>
       </section>
 
+{/* Story Pages */}
+<section id="story-org" className="border-t border-slate-200 bg-white">
+  <div className="mx-auto max-w-6xl px-4 py-14">
+    <h2 className="text-2xl font-bold tracking-tight">Organisational Performance</h2>
+    <p className="mt-4 max-w-3xl text-slate-600">
+      Add your content here...
+    </p>
+  </div>
+</section>
+
+<section id="story-personal" className="border-t border-slate-200 bg-white">
+  <div className="mx-auto max-w-6xl px-4 py-14">
+    <h2 className="text-2xl font-bold tracking-tight">Personal Development</h2>
+    <p className="mt-4 max-w-3xl text-slate-600">
+      Add your content here...
+    </p>
+  </div>
+</section>
+
+<section id="story-procurement" className="border-t border-slate-200 bg-white">
+  <div className="mx-auto max-w-6xl px-4 py-14">
+    <h2 className="text-2xl font-bold tracking-tight">Procurement as Value</h2>
+    <p className="mt-4 max-w-3xl text-slate-600">
+      Add your content here...
+    </p>
+  </div>
+</section>
+
+<section id="story-leadership" className="border-t border-slate-200 bg-white">
+  <div className="mx-auto max-w-6xl px-4 py-14">
+    <h2 className="text-2xl font-bold tracking-tight">Leadership that Inspires</h2>
+    <p className="mt-4 max-w-3xl text-slate-600">
+      Add your content here...
+    </p>
+  </div>
+</section>
+      
       {/* Speaking */}
       <section id="speaking" className="border-t border-slate-200">
         <div className="mx-auto max-w-6xl px-4 py-14">
