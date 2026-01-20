@@ -52,12 +52,12 @@ export default function LeadershipThatInspires() {
 
         <div className="mt-10 grid gap-4 md:grid-cols-2">
           {[
-            "Stay calm when others react",
+            "My Hierarchy of Success",
             "Hold standards under pressure",
-            "Clarity before speed",
-            "Hard conversations early",
-            "Own mistakes, fix forward",
-            "Protect the team, challenge the work",
+            "Control the Controllables",
+            "I don't believe in regrets",
+            "Respect, its cost's nothing, but means everything",
+            "Leadership isn't about knowing everything",
           ].map((x) => (
             <div
               key={x}
