@@ -390,7 +390,7 @@ export default function App() {
         path="/stories/leadership-that-inspires"
         element={<LeadershipThatInspires />}
       />
-      <Route path="/news/talent-development-strategy" element={<TalentDevelopmentStrategy />} />
+      <Route path="/stories/talent-development-strategy" element={<TalentDevelopmentStrategy />} />
     </Routes>
   );
 }
