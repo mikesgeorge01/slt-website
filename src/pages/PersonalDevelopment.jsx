@@ -42,7 +42,7 @@ export default function PersonalDevelopment() {
       {/* Page Content */}
       <div className="mx-auto max-w-6xl px-4 py-14">
         <h1 className="text-4xl font-extrabold tracking-tight">
-          Leadership that Inspires
+          Personal Development
         </h1>
         <div className="mt-4 h-1 w-20 rounded-full bg-amber-500"></div>
 
