@@ -73,7 +73,7 @@ export default function IdiotsGuideProcurement() {
         </p>
 
         <p className="mt-4 text-slate-600 leading-relaxed">
-          So here it is — my Idiot’s Guide to Procurement. The basics, done properly.
+          So here it is, my Idiot’s Guide to Procurement. The basics, done properly.
         </p>
 
         {/* Sections */}
