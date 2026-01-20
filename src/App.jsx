@@ -278,25 +278,59 @@ function Home() {
         </div>
       </section>
 
-      {/* Speaking */}
-      <section id="speaking" className="border-t border-slate-200">
-        <div className="mx-auto max-w-6xl px-4 py-14">
-          <h2 className="text-2xl font-bold tracking-tight">Speaking</h2>
-          <p className="mt-4 max-w-3xl text-slate-600">
-            I am available for keynotes, leadership sessions, procurement transformation talks, and team workshops.
-          </p>
-        </div>
-      </section>
+{/* Speaking */}
+<section id="speaking" className="border-t border-slate-200">
+  <div className="mx-auto max-w-6xl px-4 py-14">
+    <h2 className="text-2xl font-bold tracking-tight">Speaking</h2>
+    <p className="mt-4 max-w-3xl text-slate-600">
+      I am available for keynotes, leadership sessions, procurement transformation talks, and team workshops,
+      all tailored to the audience and built to drive action.
+    </p>
 
-      {/* News */}
-      <section id="news" className="border-t border-slate-200 bg-slate-50">
-        <div className="mx-auto max-w-6xl px-4 py-14">
-          <h2 className="text-2xl font-bold tracking-tight">News</h2>
-          <p className="mt-4 max-w-3xl text-slate-600">
-            Updates, reflections, and announcements from SLT.
-          </p>
+    <div className="mt-10 grid gap-4 md:grid-cols-3">
+      {[
+        { title: "Leadership Standards", desc: "Respect, accountability, trust, and discipline, made practical." },
+        { title: "High-performing Teams", desc: "What ‘great’ looks like, and how to build it deliberately." },
+        { title: "Procurement Transformation", desc: "From transaction to strategic value, governance, outcomes, culture." },
+      ].map((item) => (
+        <div key={item.title} className="rounded-3xl border border-slate-200 bg-white p-6">
+          <div className="text-sm font-semibold">{item.title}</div>
+          <p className="mt-2 text-sm text-slate-600">{item.desc}</p>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
+{/* News */}
+<section id="news" className="border-t border-slate-200 bg-slate-50">
+  <div className="mx-auto max-w-6xl px-4 py-14">
+    <h2 className="text-2xl font-bold tracking-tight">News</h2>
+    <p className="mt-4 max-w-3xl text-slate-600">
+      Updates, reflections, and announcements from SLT — new thinking, recent talks,
+      and moments worth sharing.
+    </p>
+
+    <div className="mt-10 grid gap-4 md:grid-cols-2">
+      <div className="rounded-3xl border border-slate-200 bg-white p-6">
+        <div className="text-sm font-semibold">SLT launch</div>
+        <p className="mt-2 text-sm text-slate-600">
+          Scars, Lessons & Triumphs is now live, a platform for sharing leadership
+          experience from the procurement front line.
+        </p>
+        <div className="mt-3 text-xs text-slate-500">January 2026</div>
+      </div>
+
+      <div className="rounded-3xl border border-slate-200 bg-white p-6">
+        <div className="text-sm font-semibold">Speaking engagements</div>
+        <p className="mt-2 text-sm text-slate-600">
+          Upcoming leadership and procurement sessions currently being planned.
+        </p>
+        <div className="mt-3 text-xs text-slate-500">Coming soon</div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Contact */}
       <section id="contact" className="border-t border-slate-200">
