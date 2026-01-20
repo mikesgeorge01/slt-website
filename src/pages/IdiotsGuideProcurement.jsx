@@ -51,7 +51,7 @@ export default function IdiotsGuideProcurement() {
 <img
   src="/idiots-guide.jpg"
   alt="Idiot’s Guide to Procurement"
-  className="mt-8 w-full rounded-3xl border border-slate-200 shadow-sm"
+  className="mt-8 mx-auto w-full max-w-xl rounded-3xl border border-slate-200 shadow-sm"
 />
 
         <div className="mt-5 text-sm text-slate-500">
