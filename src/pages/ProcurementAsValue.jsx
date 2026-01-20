@@ -9,6 +9,7 @@ export default function ProcurementAsValue() {
       {/* Simple Header */}
       <header className="sticky top-0 z-50 w-full border-b border-slate-200/70 bg-white/85 backdrop-blur-xl">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+          {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
             <img src="/logo.png" alt="SLT logo" className="h-14 w-auto" />
             <div className="hidden sm:block">
@@ -19,6 +20,7 @@ export default function ProcurementAsValue() {
             </div>
           </Link>
 
+          {/* Header Buttons */}
           <div className="flex items-center gap-3">
             <Link
               to="/"
@@ -50,7 +52,21 @@ export default function ProcurementAsValue() {
           Calm, accountability, and standards when it gets uncomfortable.
         </p>
 
+        {/* Cards */}
         <div className="mt-10 grid gap-4 md:grid-cols-2">
+          {/* NEW CLICKABLE CARD */}
+          <Link
+            to="/stories/idiots-guide-procurement"
+            className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition block"
+          >
+            <div className="text-sm font-semibold">
+              My “Idiot’s Guide” to Procurement (No Fluff Edition)
+            </div>
+            <div className="mt-2 text-xs font-semibold text-amber-600">
+              Read more →
+            </div>
+          </Link>
+
           {[
             "Procurement is built on trust and trust is built on ethics",
             "NEC vs FDIC, whats the real difference",

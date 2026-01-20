@@ -1,3 +1,4 @@
+import IdiotsGuideProcurement from "./pages/IdiotsGuideProcurement";
 import TalentDevelopmentStrategy from "./pages/TalentDevelopmentStrategy";
 import React, { useMemo } from "react";
 import { Routes, Route, Link } from "react-router-dom";
@@ -377,20 +378,36 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+
       <Route
         path="/stories/organisational-performance"
         element={<OrganisationalPerformance />}
       />
+
       <Route
         path="/stories/personal-development"
         element={<PersonalDevelopment />}
       />
-      <Route path="/stories/procurement-as-value" element={<ProcurementAsValue />} />
+
+      <Route
+        path="/stories/procurement-as-value"
+        element={<ProcurementAsValue />}
+      />
+
       <Route
         path="/stories/leadership-that-inspires"
         element={<LeadershipThatInspires />}
       />
-      <Route path="/stories/talent-development-strategy" element={<TalentDevelopmentStrategy />} />
+
+      <Route
+        path="/stories/talent-development-strategy"
+        element={<TalentDevelopmentStrategy />}
+      />
+
+      <Route
+        path="/stories/idiots-guide-procurement"
+        element={<IdiotsGuideProcurement />}
+      />
     </Routes>
   );
 }
