@@ -44,7 +44,7 @@ export default function IdiotsGuideProcurement() {
       {/* Article */}
       <main className="mx-auto max-w-3xl px-4 py-14">
 <h1 className="text-4xl font-extrabold tracking-tight">
-  My “Idiot’s Guide” to Procurement 
+  My “Idiot’s Guide” to Procurement <br />
   (No Fluff Edition)
 </h1>
 <div className="mt-4 h-1 w-20 rounded-full bg-amber-500"></div>
