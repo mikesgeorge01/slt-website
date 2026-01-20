@@ -353,7 +353,7 @@ function Home() {
             </a>
 
             <a
-              href="mailto:mikegeorge.uk1@gmail.com"
+              href="mailto:mike@scarslessonstriumphs.com"
               className="rounded-2xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-800 hover:bg-slate-100"
             >
               Email
