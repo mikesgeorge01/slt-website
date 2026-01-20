@@ -43,10 +43,16 @@ export default function IdiotsGuideProcurement() {
 
       {/* Article */}
       <main className="mx-auto max-w-3xl px-4 py-14">
-        <h1 className="text-4xl font-extrabold tracking-tight">
-          My “Idiot’s Guide” to Procurement (No Fluff Edition)
-        </h1>
-        <div className="mt-4 h-1 w-20 rounded-full bg-amber-500"></div>
+<h1 className="text-4xl font-extrabold tracking-tight">
+  My “Idiot’s Guide” to Procurement (No Fluff Edition)
+</h1>
+<div className="mt-4 h-1 w-20 rounded-full bg-amber-500"></div>
+
+<img
+  src="/idiots-guide.jpg"
+  alt="Idiot’s Guide to Procurement"
+  className="mt-8 w-full rounded-3xl border border-slate-200 shadow-sm"
+/>
 
         <div className="mt-5 text-sm text-slate-500">
           Published: <span className="font-semibold text-slate-700">{published}</span>
