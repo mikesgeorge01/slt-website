@@ -1,3 +1,4 @@
+import HierarchyOfSuccess from "./pages/HierarchyOfSuccess";
 import IdiotsGuideProcurement from "./pages/IdiotsGuideProcurement";
 import TalentDevelopmentStrategy from "./pages/TalentDevelopmentStrategy";
 import React, { useMemo } from "react";
@@ -408,6 +409,11 @@ export default function App() {
         path="/stories/idiots-guide-procurement"
         element={<IdiotsGuideProcurement />}
       />
+
+      <Route
+  path="/stories/hierarchy-of-success"
+  element={<HierarchyOfSuccess />}
+/>
     </Routes>
   );
 }

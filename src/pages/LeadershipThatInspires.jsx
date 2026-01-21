@@ -51,19 +51,37 @@ export default function LeadershipThatInspires() {
         </p>
 
         <div className="mt-10 grid gap-4 md:grid-cols-2">
+          {/* Live article */}
+          <Link
+            to="/stories/hierarchy-of-success"
+            className="block rounded-3xl border border-slate-200 bg-white p-6 hover:shadow-md transition"
+          >
+            <div className="text-sm font-semibold">My Hierarchy of Success</div>
+            <p className="mt-2 text-sm text-slate-600">
+              Business → Team → Individual. Why sustainable success starts bigger
+              than ourselves.
+            </p>
+            <div className="mt-4 text-xs font-semibold text-amber-600">
+              Read more →
+            </div>
+          </Link>
+
+          {/* Coming soon placeholders */}
           {[
-            "My Hierarchy of Success",
             "Control the Controllables",
             "I don't believe in regrets",
-            "Respect, its cost's nothing, but means everything",
+            "Respect, it costs nothing, but means everything",
             "What I Look for When Interviewing For Talent",
-            "Every succes starts by saying you can't",
+            "Every success starts by saying you can",
           ].map((x) => (
             <div
               key={x}
               className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
             >
               <div className="text-sm font-semibold">{x}</div>
+              <div className="mt-3 text-xs font-semibold text-slate-400">
+                Coming soon
+              </div>
             </div>
           ))}
         </div>
