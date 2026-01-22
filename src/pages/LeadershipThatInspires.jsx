@@ -51,7 +51,7 @@ export default function LeadershipThatInspires() {
         </p>
 
         <div className="mt-10 grid gap-4 md:grid-cols-2">
-          {/* Live article */}
+          {/* Live article – Hierarchy of Success */}
           <Link
             to="/stories/hierarchy-of-success"
             className="block rounded-3xl border border-slate-200 bg-white p-6 hover:shadow-md transition"
@@ -66,9 +66,22 @@ export default function LeadershipThatInspires() {
             </div>
           </Link>
 
+          {/* Live article – Control the Controllables */}
+          <Link
+            to="/stories/control-the-controllables"
+            className="block rounded-3xl border border-slate-200 bg-white p-6 hover:shadow-md transition"
+          >
+            <div className="text-sm font-semibold">Control the Controllables</div>
+            <p className="mt-2 text-sm text-slate-600">
+              Focus your energy on what you can influence — and let the rest pass.
+            </p>
+            <div className="mt-4 text-xs font-semibold text-amber-600">
+              Read more →
+            </div>
+          </Link>
+
           {/* Coming soon placeholders */}
           {[
-            "Control the Controllables",
             "I don't believe in regrets",
             "Respect, it costs nothing, but means everything",
             "What I Look for When Interviewing For Talent",

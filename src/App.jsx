@@ -1,3 +1,4 @@
+import ControlTheControllables from "./pages/ControlTheControllables";
 import HierarchyOfSuccess from "./pages/HierarchyOfSuccess";
 import IdiotsGuideProcurement from "./pages/IdiotsGuideProcurement";
 import TalentDevelopmentStrategy from "./pages/TalentDevelopmentStrategy";
@@ -413,6 +414,11 @@ export default function App() {
       <Route
   path="/stories/hierarchy-of-success"
   element={<HierarchyOfSuccess />}
+/>
+
+<Route
+  path="/stories/control-the-controllables"
+  element={<ControlTheControllables />}
 />
     </Routes>
   );
