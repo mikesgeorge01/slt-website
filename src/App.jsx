@@ -1,3 +1,4 @@
+import IDontBelieveInRegrets from "./pages/IDontBelieveInRegrets";
 import ControlTheControllables from "./pages/ControlTheControllables";
 import HierarchyOfSuccess from "./pages/HierarchyOfSuccess";
 import IdiotsGuideProcurement from "./pages/IdiotsGuideProcurement";
@@ -419,6 +420,11 @@ export default function App() {
 <Route
   path="/stories/control-the-controllables"
   element={<ControlTheControllables />}
+/>
+
+<Route
+  path="/stories/i-dont-believe-in-regrets"
+  element={<IDontBelieveInRegrets />}
 />
     </Routes>
   );
