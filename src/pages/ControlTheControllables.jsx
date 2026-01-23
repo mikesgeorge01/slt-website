@@ -49,6 +49,18 @@ export default function ControlTheControllables() {
 
         <div className="mt-4 h-1 w-20 rounded-full bg-amber-500"></div>
 
+<img
+  src="/images/control-the-controllables.jpg"
+  alt="Control the controllables"
+  style={{
+    width: "100%",
+    maxWidth: "750px",
+    height: "auto",
+    borderRadius: "12px",
+    margin: "20px 0",
+  }}
+/>
+
         <div className="mt-5 text-sm text-slate-500">
           Published:{" "}
           <span className="font-semibold text-slate-700">{published}</span>
