@@ -84,8 +84,8 @@ export default function IDontBelieveInRegrets() {
         </p>
 
         <p className="mt-6 text-slate-600 leading-relaxed">
-          Every experience we’ve encountered — the wins, the losses, the setbacks,
-          the challenges, the tough days, and the proud moments — has shaped who
+          Every experience we’ve encountered, the wins, the losses, the setbacks,
+          the challenges, the tough days, and the proud moments, has shaped who
           we are today.
         </p>
 
