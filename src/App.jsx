@@ -323,7 +323,7 @@ function Home() {
         <div className="mx-auto max-w-6xl px-4 py-14">
           <h2 className="text-2xl font-bold tracking-tight">News</h2>
           <p className="mt-4 max-w-3xl text-slate-600">
-            Updates, reflections, and announcements from SLT — new thinking, recent talks,
+            Updates, reflections, and announcements from SLT, new thinking, recent talks,
             and moments worth sharing.
           </p>
 
@@ -346,7 +346,7 @@ function Home() {
                 Fall in Love With Your Life 2026
               </div>
               <p className="mt-2 text-sm text-slate-600">
-                20 simple habits that make a powerful difference — one day at a time.
+                20 simple habits that make a powerful difference, one day at a time.
               </p>
               <div className="mt-3 text-xs font-semibold text-amber-600">
                 Read more →
@@ -361,7 +361,7 @@ function Home() {
         <div className="mx-auto max-w-6xl px-4 py-14">
           <h2 className="text-2xl font-bold tracking-tight">Contact</h2>
           <p className="mt-4 max-w-3xl text-slate-600">
-            For speaking, collaboration, or SLT conversations, the quickest route is LinkedIn for now.
+            For speaking, collaboration, or SLT conversations, message on LinkedIn or click the email button.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
