@@ -80,9 +80,23 @@ export default function LeadershipThatInspires() {
             </div>
           </Link>
 
+          {/* Live article – I Don’t Believe in Regrets */}
+          <Link
+            to="/stories/i-dont-believe-in-regrets"
+            className="block rounded-3xl border border-slate-200 bg-white p-6 hover:shadow-md transition"
+          >
+            <div className="text-sm font-semibold">I Don’t Believe in Regrets</div>
+            <p className="mt-2 text-sm text-slate-600">
+              Every decision was made with what we knew at the time. No regrets —
+              just lessons and forward momentum.
+            </p>
+            <div className="mt-4 text-xs font-semibold text-amber-600">
+              Read more →
+            </div>
+          </Link>
+
           {/* Coming soon placeholders */}
           {[
-            "I don't believe in regrets",
             "Respect, it costs nothing, but means everything",
             "What I Look for When Interviewing For Talent",
             "Every success starts by saying you can",
