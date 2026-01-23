@@ -57,12 +57,8 @@ export default function PersonalDevelopment() {
                 "How to Lead Without Knowing Everything — Ask Better Questions, at the Right Time",
               to: "/stories/how-to-lead-without-knowing-everything",
             },
-            {
-              title: "Control the Controllables",
-              to: "/stories/control-the-controllables",
-            },
 
-            // 👇 Re-added your previous Personal Development titles
+            // Previous Personal Development titles (placeholders for now)
             {
               title: "Victim vs Victor Mindset",
               to: null,
