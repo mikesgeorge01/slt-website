@@ -1,3 +1,4 @@
+import DisciplineAboveEverythingElse from "./pages/DisciplineAboveEverythingElse";
 import TheArtOfInfluencing from "./pages/TheArtOfInfluencing";
 import StopThinkingItStartSayingIt from "./pages/StopThinkingItStartSayingIt";
 import WhatILookForWhenInterviewingForTalent from "./pages/WhatILookForWhenInterviewingForTalent";
@@ -467,6 +468,11 @@ export default function App() {
 <Route
   path="/stories/the-art-of-influencing"
   element={<TheArtOfInfluencing />}
+/>
+
+<Route
+  path="/stories/discipline-above-everything-else"
+  element={<DisciplineAboveEverythingElse />}
 />
     </Routes>
   );

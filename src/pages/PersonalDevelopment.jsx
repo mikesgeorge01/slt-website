@@ -65,8 +65,12 @@ export default function PersonalDevelopment() {
               title: "The Art of Influencing",
               to: "/stories/the-art-of-influencing",
             },
+            {
+              title: "Discipline — Above Everything Else",
+              to: "/stories/discipline-above-everything-else",
+            },
 
-            // Previous Personal Development titles (placeholders for now)
+            // Placeholders (coming soon)
             {
               title: "Victim vs Victor Mindset",
               to: null,
