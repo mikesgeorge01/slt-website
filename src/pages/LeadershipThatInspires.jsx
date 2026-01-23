@@ -95,9 +95,25 @@ export default function LeadershipThatInspires() {
             </div>
           </Link>
 
+          {/* Live article – Respect */}
+          <Link
+            to="/stories/respect-costs-nothing"
+            className="block rounded-3xl border border-slate-200 bg-white p-6 hover:shadow-md transition"
+          >
+            <div className="text-sm font-semibold">
+              Respect, it costs nothing, but means everything
+            </div>
+            <p className="mt-2 text-sm text-slate-600">
+              Respect sets the tone. It builds trust, strengthens relationships,
+              and shows real character.
+            </p>
+            <div className="mt-4 text-xs font-semibold text-amber-600">
+              Read more →
+            </div>
+          </Link>
+
           {/* Coming soon placeholders */}
           {[
-            "Respect, it costs nothing, but means everything",
             "What I Look for When Interviewing For Talent",
             "Every success starts by saying you can",
           ].map((x) => (

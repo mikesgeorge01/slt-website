@@ -1,3 +1,4 @@
+import RespectCostsNothing from "./pages/RespectCostsNothing";
 import PowerPointWarriorProblem from "./pages/PowerPointWarriorProblem";
 import IDontBelieveInRegrets from "./pages/IDontBelieveInRegrets";
 import ControlTheControllables from "./pages/ControlTheControllables";
@@ -431,6 +432,11 @@ export default function App() {
 <Route
   path="/stories/powerpoint-warrior-problem"
   element={<PowerPointWarriorProblem />}
+/>
+
+<Route
+  path="/stories/respect-costs-nothing"
+  element={<RespectCostsNothing />}
 />
     </Routes>
   );
