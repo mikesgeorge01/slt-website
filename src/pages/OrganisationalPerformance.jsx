@@ -57,6 +57,10 @@ export default function OrganisationalPerformance() {
               to: "/stories/talent-development-strategy",
             },
             {
+              title: "The “PowerPoint Warrior” Problem",
+              to: "/stories/powerpoint-warrior-problem",
+            },
+            {
               title: "Work Life Balance: A Leadership Responsibility, Not a Luxury",
               to: null,
             },

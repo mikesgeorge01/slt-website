@@ -1,3 +1,4 @@
+import PowerPointWarriorProblem from "./pages/PowerPointWarriorProblem";
 import IDontBelieveInRegrets from "./pages/IDontBelieveInRegrets";
 import ControlTheControllables from "./pages/ControlTheControllables";
 import HierarchyOfSuccess from "./pages/HierarchyOfSuccess";
@@ -425,6 +426,11 @@ export default function App() {
 <Route
   path="/stories/i-dont-believe-in-regrets"
   element={<IDontBelieveInRegrets />}
+/>
+
+<Route
+  path="/stories/powerpoint-warrior-problem"
+  element={<PowerPointWarriorProblem />}
 />
     </Routes>
   );
