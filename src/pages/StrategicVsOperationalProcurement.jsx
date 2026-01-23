@@ -56,6 +56,7 @@ export default function StrategicVsOperationalProcurement() {
   className="mt-8 mx-auto w-full max-w-xl rounded-3xl border border-slate-200 shadow-sm"
 />
 
+
         <div className="mt-5 text-sm text-slate-500">
           Published:{" "}
           <span className="font-semibold text-slate-700">{published}</span>
