@@ -1,3 +1,4 @@
+import FallInLoveWithYourLife2026 from "./pages/FallInLoveWithYourLife2026";
 import DisciplineAboveEverythingElse from "./pages/DisciplineAboveEverythingElse";
 import TheArtOfInfluencing from "./pages/TheArtOfInfluencing";
 import StopThinkingItStartSayingIt from "./pages/StopThinkingItStartSayingIt";
@@ -210,11 +211,13 @@ function Home() {
             apprentice with Shell. Nearly four decades later, I’ve worked across
             engineering and procurement, spending 25+ years in senior procurement
             leadership roles and learning from exceptional people along the way.
-            <br /><br />
+            <br />
+            <br />
             I don’t claim perfection or ego, only experience. The scars earned,
             lessons learned, and triumphs achieved have shaped my values, my
             leadership, and my perspective on success.
-            <br /><br />
+            <br />
+            <br />
             SLT is my way of giving back: sharing real experiences to support,
             challenge, and inspire those navigating their own careers.
           </p>
@@ -291,59 +294,67 @@ function Home() {
         </div>
       </section>
 
-{/* Speaking */}
-<section id="speaking" className="border-t border-slate-200">
-  <div className="mx-auto max-w-6xl px-4 py-14">
-    <h2 className="text-2xl font-bold tracking-tight">Speaking</h2>
-    <p className="mt-4 max-w-3xl text-slate-600">
-      I am available for keynotes, leadership sessions, procurement transformation talks, and team workshops,
-      all tailored to the audience and built to drive action.
-    </p>
+      {/* Speaking */}
+      <section id="speaking" className="border-t border-slate-200">
+        <div className="mx-auto max-w-6xl px-4 py-14">
+          <h2 className="text-2xl font-bold tracking-tight">Speaking</h2>
+          <p className="mt-4 max-w-3xl text-slate-600">
+            I am available for keynotes, leadership sessions, procurement transformation talks, and team workshops,
+            all tailored to the audience and built to drive action.
+          </p>
 
-    <div className="mt-10 grid gap-4 md:grid-cols-3">
-      {[
-        { title: "Leadership Standards", desc: "Respect, accountability, trust, and discipline, made practical." },
-        { title: "High-performing Teams", desc: "What ‘great’ looks like, and how to build it deliberately." },
-        { title: "Procurement Transformation", desc: "From transaction to strategic value, governance, outcomes, culture." },
-      ].map((item) => (
-        <div key={item.title} className="rounded-3xl border border-slate-200 bg-white p-6">
-          <div className="text-sm font-semibold">{item.title}</div>
-          <p className="mt-2 text-sm text-slate-600">{item.desc}</p>
+          <div className="mt-10 grid gap-4 md:grid-cols-3">
+            {[
+              { title: "Leadership Standards", desc: "Respect, accountability, trust, and discipline, made practical." },
+              { title: "High-performing Teams", desc: "What ‘great’ looks like, and how to build it deliberately." },
+              { title: "Procurement Transformation", desc: "From transaction to strategic value, governance, outcomes, culture." },
+            ].map((item) => (
+              <div key={item.title} className="rounded-3xl border border-slate-200 bg-white p-6">
+                <div className="text-sm font-semibold">{item.title}</div>
+                <p className="mt-2 text-sm text-slate-600">{item.desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </section>
 
-{/* News */}
-<section id="news" className="border-t border-slate-200 bg-slate-50">
-  <div className="mx-auto max-w-6xl px-4 py-14">
-    <h2 className="text-2xl font-bold tracking-tight">News</h2>
-    <p className="mt-4 max-w-3xl text-slate-600">
-      Updates, reflections, and announcements from SLT — new thinking, recent talks,
-      and moments worth sharing.
-    </p>
+      {/* News */}
+      <section id="news" className="border-t border-slate-200 bg-slate-50">
+        <div className="mx-auto max-w-6xl px-4 py-14">
+          <h2 className="text-2xl font-bold tracking-tight">News</h2>
+          <p className="mt-4 max-w-3xl text-slate-600">
+            Updates, reflections, and announcements from SLT — new thinking, recent talks,
+            and moments worth sharing.
+          </p>
 
-    <div className="mt-10 grid gap-4 md:grid-cols-2">
-      <div className="rounded-3xl border border-slate-200 bg-white p-6">
-        <div className="text-sm font-semibold">SLT launch</div>
-        <p className="mt-2 text-sm text-slate-600">
-          Scars, Lessons & Triumphs is now live, a platform for sharing leadership
-          experience from the procurement front line.
-        </p>
-        <div className="mt-3 text-xs text-slate-500">January 2026</div>
-      </div>
+          <div className="mt-10 grid gap-4 md:grid-cols-2">
+            <div className="rounded-3xl border border-slate-200 bg-white p-6">
+              <div className="text-sm font-semibold">SLT launch</div>
+              <p className="mt-2 text-sm text-slate-600">
+                Scars, Lessons & Triumphs is now live, a platform for sharing leadership
+                experience from the procurement front line.
+              </p>
+              <div className="mt-3 text-xs text-slate-500">January 2026</div>
+            </div>
 
-      <div className="rounded-3xl border border-slate-200 bg-white p-6">
-        <div className="text-sm font-semibold">Speaking engagements</div>
-        <p className="mt-2 text-sm text-slate-600">
-          Upcoming leadership and procurement sessions currently being planned.
-        </p>
-        <div className="mt-3 text-xs text-slate-500">Coming soon</div>
-      </div>
-    </div>
-  </div>
-</section>
+            {/* NEW clickable tile */}
+            <Link
+              to="/stories/fall-in-love-with-your-life-2026"
+              className="block rounded-3xl border border-slate-200 bg-white p-6 hover:shadow-md transition"
+            >
+              <div className="text-sm font-semibold">
+                Fall in Love With Your Life 2026
+              </div>
+              <p className="mt-2 text-sm text-slate-600">
+                20 simple habits that make a powerful difference — one day at a time.
+              </p>
+              <div className="mt-3 text-xs font-semibold text-amber-600">
+                Read more →
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* Contact */}
       <section id="contact" className="border-t border-slate-200">
@@ -420,60 +431,62 @@ export default function App() {
         element={<IdiotsGuideProcurement />}
       />
 
+      <Route path="/stories/hierarchy-of-success" element={<HierarchyOfSuccess />} />
+
       <Route
-  path="/stories/hierarchy-of-success"
-  element={<HierarchyOfSuccess />}
-/>
+        path="/stories/control-the-controllables"
+        element={<ControlTheControllables />}
+      />
 
-<Route
-  path="/stories/control-the-controllables"
-  element={<ControlTheControllables />}
-/>
+      <Route
+        path="/stories/i-dont-believe-in-regrets"
+        element={<IDontBelieveInRegrets />}
+      />
 
-<Route
-  path="/stories/i-dont-believe-in-regrets"
-  element={<IDontBelieveInRegrets />}
-/>
+      <Route
+        path="/stories/powerpoint-warrior-problem"
+        element={<PowerPointWarriorProblem />}
+      />
 
-<Route
-  path="/stories/powerpoint-warrior-problem"
-  element={<PowerPointWarriorProblem />}
-/>
+      <Route
+        path="/stories/respect-costs-nothing"
+        element={<RespectCostsNothing />}
+      />
 
-<Route
-  path="/stories/respect-costs-nothing"
-  element={<RespectCostsNothing />}
-/>
+      <Route
+        path="/stories/strategic-vs-operational-procurement"
+        element={<StrategicVsOperationalProcurement />}
+      />
 
-<Route
-  path="/stories/strategic-vs-operational-procurement"
-  element={<StrategicVsOperationalProcurement />}
-/>
+      <Route
+        path="/stories/how-to-lead-without-knowing-everything"
+        element={<HowToLeadWithoutKnowingEverything />}
+      />
 
-<Route
-  path="/stories/how-to-lead-without-knowing-everything"
-  element={<HowToLeadWithoutKnowingEverything />}
-/>
+      <Route
+        path="/stories/what-i-look-for-when-interviewing-for-talent"
+        element={<WhatILookForWhenInterviewingForTalent />}
+      />
 
-<Route
-  path="/stories/what-i-look-for-when-interviewing-for-talent"
-  element={<WhatILookForWhenInterviewingForTalent />}
-/>
+      <Route
+        path="/stories/stop-thinking-it-start-saying-it"
+        element={<StopThinkingItStartSayingIt />}
+      />
 
-<Route
-  path="/stories/stop-thinking-it-start-saying-it"
-  element={<StopThinkingItStartSayingIt />}
-/>
+      <Route
+        path="/stories/the-art-of-influencing"
+        element={<TheArtOfInfluencing />}
+      />
 
-<Route
-  path="/stories/the-art-of-influencing"
-  element={<TheArtOfInfluencing />}
-/>
+      <Route
+        path="/stories/discipline-above-everything-else"
+        element={<DisciplineAboveEverythingElse />}
+      />
 
-<Route
-  path="/stories/discipline-above-everything-else"
-  element={<DisciplineAboveEverythingElse />}
-/>
+      <Route
+        path="/stories/fall-in-love-with-your-life-2026"
+        element={<FallInLoveWithYourLife2026 />}
+      />
     </Routes>
   );
 }
