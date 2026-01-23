@@ -76,10 +76,6 @@ export default function PersonalDevelopment() {
               to: null,
             },
             {
-              title: "Discipline Beats Motivation",
-              to: null,
-            },
-            {
               title: "Consistency Wins",
               to: null,
             },
