@@ -112,21 +112,31 @@ export default function LeadershipThatInspires() {
             </div>
           </Link>
 
-          {/* Coming soon placeholders */}
-          {[
-            "What I Look for When Interviewing For Talent",
-            "Every success starts by saying you can",
-          ].map((x) => (
-            <div
-              key={x}
-              className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
-            >
-              <div className="text-sm font-semibold">{x}</div>
-              <div className="mt-3 text-xs font-semibold text-slate-400">
-                Coming soon
-              </div>
+          {/* NEW Live article – Interviewing for Talent */}
+          <Link
+            to="/stories/what-i-look-for-when-interviewing-for-talent"
+            className="block rounded-3xl border border-slate-200 bg-white p-6 hover:shadow-md transition"
+          >
+            <div className="text-sm font-semibold">
+              What I Look for When Interviewing For Talent
             </div>
-          ))}
+            <p className="mt-2 text-sm text-slate-600">
+              What I look for beyond the CV — mindset, ownership, curiosity, and values.
+            </p>
+            <div className="mt-4 text-xs font-semibold text-amber-600">
+              Read more →
+            </div>
+          </Link>
+
+          {/* Coming soon placeholder */}
+          <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div className="text-sm font-semibold">
+              Every success starts by saying you can
+            </div>
+            <div className="mt-3 text-xs font-semibold text-slate-400">
+              Coming soon
+            </div>
+          </div>
         </div>
       </div>
     </div>

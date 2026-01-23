@@ -1,3 +1,4 @@
+import WhatILookForWhenInterviewingForTalent from "./pages/WhatILookForWhenInterviewingForTalent";
 import HowToLeadWithoutKnowingEverything from "./pages/HowToLeadWithoutKnowingEverything";
 import StrategicVsOperationalProcurement from "./pages/StrategicVsOperationalProcurement";
 import RespectCostsNothing from "./pages/RespectCostsNothing";
@@ -449,6 +450,11 @@ export default function App() {
 <Route
   path="/stories/how-to-lead-without-knowing-everything"
   element={<HowToLeadWithoutKnowingEverything />}
+/>
+
+<Route
+  path="/stories/what-i-look-for-when-interviewing-for-talent"
+  element={<WhatILookForWhenInterviewingForTalent />}
 />
     </Routes>
   );
