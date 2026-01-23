@@ -57,6 +57,10 @@ export default function PersonalDevelopment() {
                 "How to Lead Without Knowing Everything — Ask Better Questions, at the Right Time",
               to: "/stories/how-to-lead-without-knowing-everything",
             },
+            {
+              title: "Stop Thinking It. Start Saying It.",
+              to: "/stories/stop-thinking-it-start-saying-it",
+            },
 
             // Previous Personal Development titles (placeholders for now)
             {
@@ -101,11 +105,3 @@ export default function PersonalDevelopment() {
                 className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
               >
                 <div className="text-sm font-semibold">{item.title}</div>
-              </div>
-            )
-          )}
-        </div>
-      </div>
-    </div>
-  );
-}

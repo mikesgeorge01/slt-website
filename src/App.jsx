@@ -1,3 +1,4 @@
+import StopThinkingItStartSayingIt from "./pages/StopThinkingItStartSayingIt";
 import WhatILookForWhenInterviewingForTalent from "./pages/WhatILookForWhenInterviewingForTalent";
 import HowToLeadWithoutKnowingEverything from "./pages/HowToLeadWithoutKnowingEverything";
 import StrategicVsOperationalProcurement from "./pages/StrategicVsOperationalProcurement";
@@ -455,6 +456,11 @@ export default function App() {
 <Route
   path="/stories/what-i-look-for-when-interviewing-for-talent"
   element={<WhatILookForWhenInterviewingForTalent />}
+/>
+
+<Route
+  path="/stories/stop-thinking-it-start-saying-it"
+  element={<StopThinkingItStartSayingIt />}
 />
     </Routes>
   );
