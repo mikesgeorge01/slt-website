@@ -80,8 +80,38 @@ export default function ProcurementAsValue() {
             </div>
           </Link>
 
-          {/* ✅ NEW CLICKABLE CARD (this was previously "Coming soon") */}
+          {/* ✅ NEW CLICKABLE CARD */}
           <Link
             to="/stories/procurement-as-value/procurement-built-on-trust"
             className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition block"
           >
+            <div className="text-sm font-semibold">
+              Procurement is built on trust, and trust is built on ethics.
+            </div>
+            <div className="mt-2 text-xs font-semibold text-amber-600">
+              Read more →
+            </div>
+          </Link>
+
+          {[
+            "NEC vs FDIC, whats the real difference",
+            "The pitfalls to look out for in strategic sourcing",
+            "Supplier reduction and consolidation",
+            "NEC Contracting, designed for colloboration",
+            "Make vs. Buy, why Procurement sits at the heart of the decision",
+          ].map((x) => (
+            <div
+              key={x}
+              className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
+            >
+              <div className="text-sm font-semibold">{x}</div>
+              <div className="mt-3 text-xs font-semibold text-slate-400">
+                Coming soon
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
