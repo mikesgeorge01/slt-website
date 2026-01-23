@@ -54,13 +54,26 @@ export default function ProcurementAsValue() {
 
         {/* Cards */}
         <div className="mt-10 grid gap-4 md:grid-cols-2">
-          {/* NEW CLICKABLE CARD */}
+          {/* CLICKABLE CARD */}
           <Link
             to="/stories/idiots-guide-procurement"
             className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition block"
           >
             <div className="text-sm font-semibold">
               My “Idiot’s Guide” to Procurement (No Fluff Edition)
+            </div>
+            <div className="mt-2 text-xs font-semibold text-amber-600">
+              Read more →
+            </div>
+          </Link>
+
+          {/* NEW CLICKABLE CARD */}
+          <Link
+            to="/stories/strategic-vs-operational-procurement"
+            className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition block"
+          >
+            <div className="text-sm font-semibold">
+              Strategic vs Operational Procurement (why both matter)
             </div>
             <div className="mt-2 text-xs font-semibold text-amber-600">
               Read more →
@@ -80,6 +93,9 @@ export default function ProcurementAsValue() {
               className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
             >
               <div className="text-sm font-semibold">{x}</div>
+              <div className="mt-3 text-xs font-semibold text-slate-400">
+                Coming soon
+              </div>
             </div>
           ))}
         </div>

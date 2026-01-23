@@ -1,3 +1,4 @@
+import StrategicVsOperationalProcurement from "./pages/StrategicVsOperationalProcurement";
 import RespectCostsNothing from "./pages/RespectCostsNothing";
 import PowerPointWarriorProblem from "./pages/PowerPointWarriorProblem";
 import IDontBelieveInRegrets from "./pages/IDontBelieveInRegrets";
@@ -437,6 +438,11 @@ export default function App() {
 <Route
   path="/stories/respect-costs-nothing"
   element={<RespectCostsNothing />}
+/>
+
+<Route
+  path="/stories/strategic-vs-operational-procurement"
+  element={<StrategicVsOperationalProcurement />}
 />
     </Routes>
   );
