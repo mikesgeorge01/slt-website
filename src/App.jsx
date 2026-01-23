@@ -1,4 +1,4 @@
-import ProcurementBuiltOnTrust from "./pages/stories/procurement-as-value/ProcurementBuiltOnTrust";
+import ProcurementBuiltOnTrust from "./pages/procurement-as-value/ProcurementBuiltOnTrust";
 import FallInLoveWithYourLife2026 from "./pages/FallInLoveWithYourLife2026";
 import DisciplineAboveEverythingElse from "./pages/DisciplineAboveEverythingElse";
 import TheArtOfInfluencing from "./pages/TheArtOfInfluencing";
