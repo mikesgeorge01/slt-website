@@ -38,12 +38,12 @@ export default function TalentDevelopmentStrategy() {
           </Link>
 
           <div className="flex items-center gap-3">
-            <Link
-              to="/"
-              className="rounded-2xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-800 hover:bg-slate-50"
-            >
-              ← Back
-            </Link>
+<Link
+  to="/stories/organisational-performance"
+  className="rounded-2xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-800 hover:bg-slate-50"
+>
+  ← Back
+</Link>
 
             <a
               href={LINKEDIN_URL}
