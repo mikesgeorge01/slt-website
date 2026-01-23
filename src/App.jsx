@@ -1,3 +1,4 @@
+import HowToLeadWithoutKnowingEverything from "./pages/HowToLeadWithoutKnowingEverything";
 import StrategicVsOperationalProcurement from "./pages/StrategicVsOperationalProcurement";
 import RespectCostsNothing from "./pages/RespectCostsNothing";
 import PowerPointWarriorProblem from "./pages/PowerPointWarriorProblem";
@@ -443,6 +444,11 @@ export default function App() {
 <Route
   path="/stories/strategic-vs-operational-procurement"
   element={<StrategicVsOperationalProcurement />}
+/>
+
+<Route
+  path="/stories/how-to-lead-without-knowing-everything"
+  element={<HowToLeadWithoutKnowingEverything />}
 />
     </Routes>
   );

@@ -47,25 +47,45 @@ export default function PersonalDevelopment() {
         <div className="mt-4 h-1 w-20 rounded-full bg-amber-500"></div>
 
         <p className="mt-6 max-w-3xl text-lg text-slate-600">
-          Calm, accountability, and standards when it gets uncomfortable.
+          Mindset, discipline, growth, and the habits that shape high performance.
         </p>
 
         <div className="mt-10 grid gap-4 md:grid-cols-2">
           {[
-            "How to Lead Without Knowing Everything",
-            "Stop thinking it, Start saying it",
-            "Clarity before speed",
-            "The art of influencing",
-            "Discipline above everything else",
-            "The art of building relationships",
-          ].map((x) => (
-            <div
-              key={x}
-              className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
-            >
-              <div className="text-sm font-semibold">{x}</div>
-            </div>
-          ))}
+            {
+              title:
+                "How to Lead Without Knowing Everything — Ask Better Questions, at the Right Time",
+              to: "/stories/how-to-lead-without-knowing-everything",
+            },
+            {
+              title: "Control the Controllables",
+              to: "/stories/control-the-controllables",
+            },
+            {
+              title: "More Personal Development reflections coming soon",
+              to: null,
+            },
+          ].map((item) =>
+            item.to ? (
+              <Link
+                key={item.title}
+                to={item.to}
+                className="block rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md"
+              >
+                <div className="text-sm font-semibold">{item.title}</div>
+                <div className="mt-2 text-xs font-semibold text-amber-600">
+                  Read more →
+                </div>
+              </Link>
+            ) : (
+              <div
+                key={item.title}
+                className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
+              >
+                <div className="text-sm font-semibold">{item.title}</div>
+              </div>
+            )
+          )}
         </div>
       </div>
     </div>
