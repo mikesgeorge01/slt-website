@@ -120,8 +120,8 @@ function Home() {
       {/* Hero */}
       <section id="home" className="relative">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:py-20">
-          <div className="grid items-center gap-10 lg:grid-cols-2">
-            {/* Left column */}
+          {/* Single column hero (image removed) */}
+          <div className="grid items-center gap-10">
             <div>
               <div className="flex flex-wrap gap-2">
                 <Pill>Leadership</Pill>
@@ -142,7 +142,7 @@ function Home() {
                   business.
                 </p>
 
-                <p className="mt-2 max-w-xl text-sm text-slate-600 leading-relaxed">
+                <p className="mt-2 max-w-2xl text-sm text-slate-600 leading-relaxed">
                   Reflections, scars and hard-won insights for leaders navigating
                   complexity, pressure and change.
                 </p>
@@ -211,24 +211,6 @@ function Home() {
                   </div>
                   <div className="mt-1 text-sm font-semibold">
                     Teach → Challenge → Inspire
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Right column: Photo */}
-            <div className="flex justify-center lg:justify-end">
-              <div className="relative">
-                <img
-                  src="/mike.jpg"
-                  alt="Mike George"
-                  className="h-[300px] w-[240px] rounded-3xl object-cover shadow-lg sm:h-[380px] sm:w-[300px]"
-                />
-
-                <div className="absolute bottom-1 left-1/2 w-[90%] -translate-x-1/2 rounded-2xl border border-slate-200 bg-white/90 p-3 shadow-lg shadow-amber-500/20">
-                  <div className="text-sm font-semibold">Mike George</div>
-                  <div className="text-xs text-slate-600 whitespace-nowrap">
-                    Senior Director & Founder of SLT
                   </div>
                 </div>
               </div>
@@ -572,7 +554,10 @@ export default function App() {
         path="/stories/idiots-guide-procurement"
         element={<IdiotsGuideProcurement />}
       />
-      <Route path="/stories/hierarchy-of-success" element={<HierarchyOfSuccess />} />
+      <Route
+        path="/stories/hierarchy-of-success"
+        element={<HierarchyOfSuccess />}
+      />
       <Route
         path="/stories/control-the-controllables"
         element={<ControlTheControllables />}
@@ -585,7 +570,10 @@ export default function App() {
         path="/stories/powerpoint-warrior-problem"
         element={<PowerPointWarriorProblem />}
       />
-      <Route path="/stories/respect-costs-nothing" element={<RespectCostsNothing />} />
+      <Route
+        path="/stories/respect-costs-nothing"
+        element={<RespectCostsNothing />}
+      />
       <Route
         path="/stories/strategic-vs-operational-procurement"
         element={<StrategicVsOperationalProcurement />}
