@@ -1,24 +1,3 @@
-import NecDesignedForCollaboration from "./pages/NecDesignedForCollaboration";
-import SupplierReductionConsolidation from "./pages/SupplierReductionConsolidation";
-import HighPerformingTeam from "./pages/HighPerformingTeam";
-import WorkLifeBalanceLeadership from "./pages/WorkLifeBalanceLeadership";
-import StrategicSourcingPitfalls from "./pages/StrategicSourcingPitfalls";
-import NecVsFidic from "./pages/NecVsFidic";
-import ProcurementBuiltOnTrust from "./pages/ProcurementBuiltOnTrust";
-import FallInLoveWithYourLife2026 from "./pages/FallInLoveWithYourLife2026";
-import DisciplineAboveEverythingElse from "./pages/DisciplineAboveEverythingElse";
-import TheArtOfInfluencing from "./pages/TheArtOfInfluencing";
-import StopThinkingItStartSayingIt from "./pages/StopThinkingItStartSayingIt";
-import WhatILookForWhenInterviewingForTalent from "./pages/WhatILookForWhenInterviewingForTalent";
-import HowToLeadWithoutKnowingEverything from "./pages/HowToLeadWithoutKnowingEverything";
-import StrategicVsOperationalProcurement from "./pages/StrategicVsOperationalProcurement";
-import RespectCostsNothing from "./pages/RespectCostsNothing";
-import PowerPointWarriorProblem from "./pages/PowerPointWarriorProblem";
-import IDontBelieveInRegrets from "./pages/IDontBelieveInRegrets";
-import ControlTheControllables from "./pages/ControlTheControllables";
-import HierarchyOfSuccess from "./pages/HierarchyOfSuccess";
-import IdiotsGuideProcurement from "./pages/IdiotsGuideProcurement";
-import TalentDevelopmentStrategy from "./pages/TalentDevelopmentStrategy";
 import React, { useMemo } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 
@@ -27,17 +6,41 @@ import PersonalDevelopment from "./pages/PersonalDevelopment";
 import ProcurementAsValue from "./pages/ProcurementAsValue";
 import LeadershipThatInspires from "./pages/LeadershipThatInspires";
 
+import TalentDevelopmentStrategy from "./pages/TalentDevelopmentStrategy";
+import IdiotsGuideProcurement from "./pages/IdiotsGuideProcurement";
+import HierarchyOfSuccess from "./pages/HierarchyOfSuccess";
+import ControlTheControllables from "./pages/ControlTheControllables";
+import IDontBelieveInRegrets from "./pages/IDontBelieveInRegrets";
+import PowerPointWarriorProblem from "./pages/PowerPointWarriorProblem";
+import RespectCostsNothing from "./pages/RespectCostsNothing";
+import StrategicVsOperationalProcurement from "./pages/StrategicVsOperationalProcurement";
+import HowToLeadWithoutKnowingEverything from "./pages/HowToLeadWithoutKnowingEverything";
+import WhatILookForWhenInterviewingForTalent from "./pages/WhatILookForWhenInterviewingForTalent";
+import StopThinkingItStartSayingIt from "./pages/StopThinkingItStartSayingIt";
+import TheArtOfInfluencing from "./pages/TheArtOfInfluencing";
+import DisciplineAboveEverythingElse from "./pages/DisciplineAboveEverythingElse";
+import FallInLoveWithYourLife2026 from "./pages/FallInLoveWithYourLife2026";
+
+import ProcurementBuiltOnTrust from "./pages/ProcurementBuiltOnTrust";
+import NecVsFidic from "./pages/NecVsFidic";
+import StrategicSourcingPitfalls from "./pages/StrategicSourcingPitfalls";
+import SupplierReductionConsolidation from "./pages/SupplierReductionConsolidation";
+import NecDesignedForCollaboration from "./pages/NecDesignedForCollaboration";
+
+import WorkLifeBalanceLeadership from "./pages/WorkLifeBalanceLeadership";
+import HighPerformingTeam from "./pages/HighPerformingTeam";
+
 const LINKEDIN_URL = "https://linkedin.com/in/mikegeorge12";
 
 function NavLink({ to, children }) {
   return (
     <button
+      type="button"
       onClick={() => {
         const el = document.getElementById(to);
         if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
       }}
       className="rounded-xl px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100"
-      type="button"
     >
       {children}
     </button>
@@ -132,15 +135,16 @@ function Home() {
 
               <div className="mt-4 h-1 w-20 rounded-full slt-accent-bg"></div>
 
-              {/* NEW headline + sub-headline + proof pills */}
+              {/* Headline + sub-headline + proof pills */}
               <div className="mt-5">
                 <p className="text-lg font-semibold text-slate-800 leading-snug">
-                  Real leadership stories from the frontline of procurement and business.
+                  Real leadership stories from the frontline of procurement and
+                  business.
                 </p>
 
                 <p className="mt-2 max-w-xl text-sm text-slate-600 leading-relaxed">
-                  Reflections, scars and hard-won insights for leaders navigating complexity,
-                  pressure and change.
+                  Reflections, scars and hard-won insights for leaders navigating
+                  complexity, pressure and change.
                 </p>
 
                 <div className="mt-4 flex flex-wrap gap-2">
@@ -155,87 +159,6 @@ function Home() {
                   </span>
                 </div>
               </div>
-
-{/* Full-width divider */}
-<div className="w-full border-t border-slate-200/70"></div>
-
-{/* About SLT */}
-<section className="py-10 sm:py-12">
-  <div className="mx-auto max-w-6xl px-4">
-    <div className="grid gap-8 lg:grid-cols-2 lg:items-start">
-      {/* Left: Text */}
-      <div>
-        <h2 className="text-2xl font-bold tracking-tight">
-          About SLT{" "}
-          <span className="text-slate-500 font-semibold">
-            (Scars, Lessons & Triumphs)
-          </span>
-        </h2>
-
-        <div className="mt-4 h-1 w-16 rounded-full slt-accent-bg"></div>
-
-        <div className="mt-5 space-y-4 text-sm text-slate-600 leading-relaxed max-w-2xl">
-          <p>
-            SLT was created to capture the lessons I’ve learned throughout my career,
-            the experiences that shaped the leader I am today, and how I approach
-            people, performance, and purpose.
-          </p>
-
-          <p>
-            <span className="font-semibold text-slate-800">
-              Scars, Lessons & Triumphs
-            </span>{" "}
-            is deliberately named, because it reflects the journey I’ve lived: the wins
-            I’m proud of, the failures that tested me, and the moments in between that
-            taught me the most.
-          </p>
-
-          <p>
-            I’ve been fortunate to work alongside brilliant leaders who challenged my
-            thinking, raised my standards, and helped shape my values. Those hard-earned
-            insights, combined with my own experience, became the lessons that matter most.
-          </p>
-
-          <p>
-            So why share them? Because building a legacy matters. And giving back matters.
-          </p>
-
-          <p>
-            SLT is my way of doing that — sharing real experiences to support, challenge,
-            and inspire others navigating their own careers.
-            <span className="font-semibold text-slate-800">
-              {" "}
-              No fluff. No theory.
-            </span>{" "}
-            Just honest reflections from the trenches.
-          </p>
-
-          <p className="font-semibold text-slate-800">
-            I’ve learned the lessons the hard way, so you don’t have to.
-          </p>
-        </div>
-      </div>
-
-      {/* Right: Image */}
-      <div className="flex justify-center lg:justify-end">
-        <div className="relative">
-          <img
-            src="/mike.jpg"
-            alt="Mike George"
-            className="h-[320px] w-[260px] rounded-3xl object-cover shadow-lg sm:h-[420px] sm:w-[340px]"
-          />
-
-          <div className="absolute bottom-3 left-1/2 w-[92%] -translate-x-1/2 rounded-2xl border border-slate-200 bg-white/90 p-3 shadow-lg shadow-amber-500/20">
-            <div className="text-sm font-semibold">Mike George</div>
-            <div className="text-xs text-slate-600 whitespace-nowrap">
-              Founder — Scars, Lessons & Triumphs
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
               <div className="mt-8 flex flex-wrap gap-3">
                 <button
@@ -265,19 +188,27 @@ function Home() {
 
               <div className="mt-8 grid gap-3 sm:grid-cols-3">
                 <div className="rounded-3xl border border-slate-200 bg-white p-4">
-                  <div className="text-xs font-semibold text-slate-500">Focus</div>
+                  <div className="text-xs font-semibold text-slate-500">
+                    Focus
+                  </div>
                   <div className="mt-1 text-sm font-semibold">
                     Business → Team → Individual
                   </div>
                 </div>
+
                 <div className="rounded-3xl border border-slate-200 bg-white p-4">
-                  <div className="text-xs font-semibold text-slate-500">Style</div>
+                  <div className="text-xs font-semibold text-slate-500">
+                    Style
+                  </div>
                   <div className="mt-1 text-sm font-semibold">
                     Supportive → Respectful → Real
                   </div>
                 </div>
+
                 <div className="rounded-3xl border border-slate-200 bg-white p-4">
-                  <div className="text-xs font-semibold text-slate-500">Intent</div>
+                  <div className="text-xs font-semibold text-slate-500">
+                    Intent
+                  </div>
                   <div className="mt-1 text-sm font-semibold">
                     Teach → Challenge → Inspire
                   </div>
@@ -287,25 +218,107 @@ function Home() {
 
             {/* Right column: Photo */}
             <div className="flex justify-center lg:justify-end">
-              <div className="flex flex-col items-center gap-6">
-                <div className="relative">
-                  <img
-                    src="/mike.jpg"
-                    alt="Mike George"
-                    className="h-[300px] w-[240px] rounded-3xl object-cover shadow-lg sm:h-[380px] sm:w-[300px]"
-                  />
+              <div className="relative">
+                <img
+                  src="/mike.jpg"
+                  alt="Mike George"
+                  className="h-[300px] w-[240px] rounded-3xl object-cover shadow-lg sm:h-[380px] sm:w-[300px]"
+                />
 
-                  <div className="absolute bottom-1 left-1/2 w-[90%] -translate-x-1/2 rounded-2xl border border-slate-200 bg-white/90 p-3 shadow-lg shadow-amber-500/20">
-                    <div className="text-sm font-semibold">Mike George</div>
-                    <div className="text-xs text-slate-600 whitespace-nowrap">
-                      Senior Director & Founder of SLT
-                    </div>
+                <div className="absolute bottom-1 left-1/2 w-[90%] -translate-x-1/2 rounded-2xl border border-slate-200 bg-white/90 p-3 shadow-lg shadow-amber-500/20">
+                  <div className="text-sm font-semibold">Mike George</div>
+                  <div className="text-xs text-slate-600 whitespace-nowrap">
+                    Senior Director & Founder of SLT
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        {/* Full-width divider (true edge-to-edge) */}
+        <div className="w-full border-t border-slate-200/70"></div>
+
+        {/* About SLT (text left, image right) */}
+        <section className="py-10 sm:py-12">
+          <div className="mx-auto max-w-6xl px-4">
+            <div className="grid gap-8 lg:grid-cols-2 lg:items-start">
+              {/* Left: Text */}
+              <div>
+                <h2 className="text-2xl font-bold tracking-tight">
+                  About SLT{" "}
+                  <span className="text-slate-500 font-semibold">
+                    (Scars, Lessons & Triumphs)
+                  </span>
+                </h2>
+
+                <div className="mt-4 h-1 w-16 rounded-full slt-accent-bg"></div>
+
+                <div className="mt-5 space-y-4 text-sm text-slate-600 leading-relaxed max-w-2xl">
+                  <p>
+                    SLT was created to capture the lessons I’ve learned throughout
+                    my career, the experiences that shaped the leader I am today,
+                    and how I approach people, performance, and purpose.
+                  </p>
+
+                  <p>
+                    <span className="font-semibold text-slate-800">
+                      Scars, Lessons & Triumphs
+                    </span>{" "}
+                    is deliberately named, because it reflects the journey I’ve
+                    lived: the wins I’m proud of, the failures that tested me, and
+                    the moments in between that taught me the most.
+                  </p>
+
+                  <p>
+                    I’ve been fortunate to work alongside brilliant leaders who
+                    challenged my thinking, raised my standards, and helped shape
+                    my values. Those hard-earned insights, combined with my own
+                    experience, became the lessons that matter most.
+                  </p>
+
+                  <p>
+                    So why share them? Because building a legacy matters. And
+                    giving back matters.
+                  </p>
+
+                  <p>
+                    SLT is my way of doing that — sharing real experiences to
+                    support, challenge, and inspire others navigating their own
+                    careers.
+                    <span className="font-semibold text-slate-800">
+                      {" "}
+                      No fluff. No theory.
+                    </span>{" "}
+                    Just honest reflections from the trenches.
+                  </p>
+
+                  <p className="font-semibold text-slate-800">
+                    I’ve learned the lessons the hard way, so you don’t have to.
+                  </p>
+                </div>
+              </div>
+
+              {/* Right: Image */}
+              <div className="flex justify-center lg:justify-end">
+                <div className="relative">
+                  <img
+                    src="/mike.jpg"
+                    alt="Mike George"
+                    className="h-[320px] w-[260px] rounded-3xl object-cover shadow-lg sm:h-[420px] sm:w-[340px]"
+                  />
+
+                  <div className="absolute bottom-3 left-1/2 w-[92%] -translate-x-1/2 rounded-2xl border border-slate-200 bg-white/90 p-3 shadow-lg shadow-amber-500/20">
+                    <div className="text-sm font-semibold">Mike George</div>
+                    <div className="text-xs text-slate-600 whitespace-nowrap">
+                      Founder — Scars, Lessons & Triumphs
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
 
       {/* Bio */}
@@ -334,7 +347,9 @@ function Home() {
       {/* About */}
       <section id="about" className="border-t border-slate-200">
         <div className="mx-auto max-w-6xl px-4 py-14">
-          <h2 className="text-2xl font-bold tracking-tight">What SLT stands for</h2>
+          <h2 className="text-2xl font-bold tracking-tight">
+            What SLT stands for
+          </h2>
           <p className="mt-4 max-w-3xl text-slate-600">
             SLT is about sharing real experiences from the trenches, lessons
             learned through pressure, mistakes, resilience, and wins.
@@ -344,19 +359,24 @@ function Home() {
             <div className="rounded-3xl border border-slate-200 bg-white p-6">
               <div className="text-sm font-semibold">Scars</div>
               <p className="mt-2 text-sm text-slate-600">
-                The moments that tested me. The hard calls. The failures I learned from.
+                The moments that tested me. The hard calls. The failures I learned
+                from.
               </p>
             </div>
+
             <div className="rounded-3xl border border-slate-200 bg-white p-6">
               <div className="text-sm font-semibold">Lessons</div>
               <p className="mt-2 text-sm text-slate-600">
-                The insight I earned: decision-making, influence, discipline, consistency.
+                The insight I earned: decision-making, influence, discipline,
+                consistency.
               </p>
             </div>
+
             <div className="rounded-3xl border border-slate-200 bg-white p-6">
               <div className="text-sm font-semibold">Triumphs</div>
               <p className="mt-2 text-sm text-slate-600">
-                The outcomes: team success, business performance, and personal growth.
+                The outcomes: team success, business performance, and personal
+                growth.
               </p>
             </div>
           </div>
@@ -406,8 +426,9 @@ function Home() {
         <div className="mx-auto max-w-6xl px-4 py-14">
           <h2 className="text-2xl font-bold tracking-tight">Speaking</h2>
           <p className="mt-4 max-w-3xl text-slate-600">
-            I am available for keynotes, leadership sessions, procurement transformation talks, and team workshops,
-            all tailored to the audience and built to drive action.
+            I am available for keynotes, leadership sessions, procurement
+            transformation talks, and team workshops, all tailored to the audience
+            and built to drive action.
           </p>
 
           <div className="mt-10 grid gap-4 md:grid-cols-3">
@@ -425,7 +446,10 @@ function Home() {
                 desc: "From transaction to strategic value, governance, outcomes, culture.",
               },
             ].map((item) => (
-              <div key={item.title} className="rounded-3xl border border-slate-200 bg-white p-6">
+              <div
+                key={item.title}
+                className="rounded-3xl border border-slate-200 bg-white p-6"
+              >
                 <div className="text-sm font-semibold">{item.title}</div>
                 <p className="mt-2 text-sm text-slate-600">{item.desc}</p>
               </div>
@@ -439,21 +463,20 @@ function Home() {
         <div className="mx-auto max-w-6xl px-4 py-14">
           <h2 className="text-2xl font-bold tracking-tight">News</h2>
           <p className="mt-4 max-w-3xl text-slate-600">
-            Updates, reflections, and announcements from SLT, new thinking, recent talks,
-            and moments worth sharing.
+            Updates, reflections, and announcements from SLT, new thinking, recent
+            talks, and moments worth sharing.
           </p>
 
           <div className="mt-10 grid gap-4 md:grid-cols-2">
             <div className="rounded-3xl border border-slate-200 bg-white p-6">
               <div className="text-sm font-semibold">SLT launch</div>
               <p className="mt-2 text-sm text-slate-600">
-                Scars, Lessons & Triumphs is now live, a platform for sharing leadership
-                experience from the procurement front line.
+                Scars, Lessons & Triumphs is now live, a platform for sharing
+                leadership experience from the procurement front line.
               </p>
               <div className="mt-3 text-xs text-slate-500">January 2026</div>
             </div>
 
-            {/* NEW clickable tile */}
             <Link
               to="/stories/fall-in-love-with-your-life-2026"
               className="block rounded-3xl border border-slate-200 bg-white p-6 hover:shadow-md transition"
@@ -462,7 +485,8 @@ function Home() {
                 Fall in Love With Your Life 2026
               </div>
               <p className="mt-2 text-sm text-slate-600">
-                20 simple habits that make a powerful difference, one day at a time.
+                20 simple habits that make a powerful difference, one day at a
+                time.
               </p>
               <div className="mt-3 text-xs font-semibold text-amber-600">
                 Read more →
@@ -477,7 +501,8 @@ function Home() {
         <div className="mx-auto max-w-6xl px-4 py-14">
           <h2 className="text-2xl font-bold tracking-tight">Contact</h2>
           <p className="mt-4 max-w-3xl text-slate-600">
-            For speaking, collaboration, or SLT conversations, message on LinkedIn or click the email button.
+            For speaking, collaboration, or SLT conversations, message on LinkedIn
+            or click the email button.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
@@ -503,7 +528,12 @@ function Home() {
       <footer className="border-t border-slate-200">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-8 text-sm text-slate-600">
           <div>© {year} SLT — Scars, Lessons & Triumphs</div>
-          <a href={LINKEDIN_URL} target="_blank" rel="noreferrer" className="hover:text-slate-900">
+          <a
+            href={LINKEDIN_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-slate-900"
+          >
             LinkedIn
           </a>
         </div>
@@ -521,17 +551,14 @@ export default function App() {
         path="/stories/organisational-performance"
         element={<OrganisationalPerformance />}
       />
-
       <Route
         path="/stories/personal-development"
         element={<PersonalDevelopment />}
       />
-
       <Route
         path="/stories/procurement-as-value"
         element={<ProcurementAsValue />}
       />
-
       <Route
         path="/stories/leadership-that-inspires"
         element={<LeadershipThatInspires />}
@@ -541,64 +568,48 @@ export default function App() {
         path="/stories/talent-development-strategy"
         element={<TalentDevelopmentStrategy />}
       />
-
       <Route
         path="/stories/idiots-guide-procurement"
         element={<IdiotsGuideProcurement />}
       />
-
       <Route path="/stories/hierarchy-of-success" element={<HierarchyOfSuccess />} />
-
       <Route
         path="/stories/control-the-controllables"
         element={<ControlTheControllables />}
       />
-
       <Route
         path="/stories/i-dont-believe-in-regrets"
         element={<IDontBelieveInRegrets />}
       />
-
       <Route
         path="/stories/powerpoint-warrior-problem"
         element={<PowerPointWarriorProblem />}
       />
-
-      <Route
-        path="/stories/respect-costs-nothing"
-        element={<RespectCostsNothing />}
-      />
-
+      <Route path="/stories/respect-costs-nothing" element={<RespectCostsNothing />} />
       <Route
         path="/stories/strategic-vs-operational-procurement"
         element={<StrategicVsOperationalProcurement />}
       />
-
       <Route
         path="/stories/how-to-lead-without-knowing-everything"
         element={<HowToLeadWithoutKnowingEverything />}
       />
-
       <Route
         path="/stories/what-i-look-for-when-interviewing-for-talent"
         element={<WhatILookForWhenInterviewingForTalent />}
       />
-
       <Route
         path="/stories/stop-thinking-it-start-saying-it"
         element={<StopThinkingItStartSayingIt />}
       />
-
       <Route
         path="/stories/the-art-of-influencing"
         element={<TheArtOfInfluencing />}
       />
-
       <Route
         path="/stories/discipline-above-everything-else"
         element={<DisciplineAboveEverythingElse />}
       />
-
       <Route
         path="/stories/fall-in-love-with-your-life-2026"
         element={<FallInLoveWithYourLife2026 />}
@@ -608,32 +619,26 @@ export default function App() {
         path="/stories/procurement-as-value/procurement-built-on-trust"
         element={<ProcurementBuiltOnTrust />}
       />
-
       <Route
         path="/stories/procurement-as-value/nec-vs-fidic"
         element={<NecVsFidic />}
       />
-
       <Route
         path="/stories/procurement-as-value/strategic-sourcing-pitfalls"
         element={<StrategicSourcingPitfalls />}
       />
-
       <Route
         path="/stories/organisational-performance/work-life-balance-leadership"
         element={<WorkLifeBalanceLeadership />}
       />
-
       <Route
         path="/stories/organisational-performance/high-performing-team"
         element={<HighPerformingTeam />}
       />
-
       <Route
         path="/stories/procurement-as-value/supplier-reduction-consolidation"
         element={<SupplierReductionConsolidation />}
       />
-
       <Route
         path="/stories/procurement-as-value/nec-designed-for-collaboration"
         element={<NecDesignedForCollaboration />}
