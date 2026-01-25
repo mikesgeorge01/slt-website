@@ -1,3 +1,4 @@
+import WorkLifeBalanceLeadership from "./pages/WorkLifeBalanceLeadership";
 import StrategicSourcingPitfalls from "./pages/StrategicSourcingPitfalls";
 import NecVsFidic from "./pages/NecVsFidic";
 import ProcurementBuiltOnTrust from "./pages/ProcurementBuiltOnTrust";
@@ -504,6 +505,11 @@ export default function App() {
 <Route
   path="/stories/procurement-as-value/strategic-sourcing-pitfalls"
   element={<StrategicSourcingPitfalls />}
+/>
+
+<Route
+  path="/stories/organisational-performance/work-life-balance-leadership"
+  element={<WorkLifeBalanceLeadership />}
 />
     </Routes>
   );
