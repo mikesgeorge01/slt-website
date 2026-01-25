@@ -156,55 +156,86 @@ function Home() {
                 </div>
               </div>
 
-<div className="my-8 h-px w-full bg-slate-200/70"></div>
+{/* Full-width divider */}
+<div className="w-full border-t border-slate-200/70"></div>
 
 {/* About SLT */}
-<div className="mt-8">
-  <h2 className="text-lg font-bold tracking-tight">
-    About SLT{" "}
-    <span className="text-slate-500 font-semibold">
-      (Scars, Lessons & Triumphs)
-    </span>
-  </h2>
+<section className="py-10 sm:py-12">
+  <div className="mx-auto max-w-6xl px-4">
+    <div className="grid gap-8 lg:grid-cols-2 lg:items-start">
+      {/* Left: Text */}
+      <div>
+        <h2 className="text-2xl font-bold tracking-tight">
+          About SLT{" "}
+          <span className="text-slate-500 font-semibold">
+            (Scars, Lessons & Triumphs)
+          </span>
+        </h2>
 
-  <div className="mt-3 h-1 w-16 rounded-full slt-accent-bg"></div>
+        <div className="mt-4 h-1 w-16 rounded-full slt-accent-bg"></div>
 
-  <div className="mt-4 space-y-4 max-w-xl text-sm text-slate-600 leading-relaxed">
-    <p>
-      SLT was created to capture the lessons I’ve learned throughout my career,
-      the experiences that shaped the leader I am today, and how I approach
-      people, performance, and purpose.
-    </p>
+        <div className="mt-5 space-y-4 text-sm text-slate-600 leading-relaxed max-w-2xl">
+          <p>
+            SLT was created to capture the lessons I’ve learned throughout my career,
+            the experiences that shaped the leader I am today, and how I approach
+            people, performance, and purpose.
+          </p>
 
-    <p>
-      <span className="font-semibold text-slate-800">Scars, Lessons & Triumphs</span>{" "}
-      is deliberately named, because it reflects the journey I’ve lived: the wins
-      I’m proud of, the failures that tested me, and the moments in between that
-      taught me the most.
-    </p>
+          <p>
+            <span className="font-semibold text-slate-800">
+              Scars, Lessons & Triumphs
+            </span>{" "}
+            is deliberately named, because it reflects the journey I’ve lived: the wins
+            I’m proud of, the failures that tested me, and the moments in between that
+            taught me the most.
+          </p>
 
-    <p>
-      I’ve been fortunate to work alongside brilliant leaders who challenged my
-      thinking, raised my standards, and helped shape my values. Those hard-earned
-      insights, combined with my own experience, became the lessons that matter most.
-    </p>
+          <p>
+            I’ve been fortunate to work alongside brilliant leaders who challenged my
+            thinking, raised my standards, and helped shape my values. Those hard-earned
+            insights, combined with my own experience, became the lessons that matter most.
+          </p>
 
-    <p>
-      So why share them? Because building a legacy matters. And giving back matters.
-    </p>
+          <p>
+            So why share them? Because building a legacy matters. And giving back matters.
+          </p>
 
-    <p>
-      SLT is my way of doing that — sharing real experiences to support, challenge,
-      and inspire others navigating their own careers.
-      <span className="font-semibold text-slate-800"> No fluff. No theory.</span>{" "}
-      Just honest reflections from the trenches.
-    </p>
+          <p>
+            SLT is my way of doing that — sharing real experiences to support, challenge,
+            and inspire others navigating their own careers.
+            <span className="font-semibold text-slate-800">
+              {" "}
+              No fluff. No theory.
+            </span>{" "}
+            Just honest reflections from the trenches.
+          </p>
 
-    <p className="font-semibold text-slate-800">
-      I’ve learned the lessons the hard way, so you don’t have to.
-    </p>
+          <p className="font-semibold text-slate-800">
+            I’ve learned the lessons the hard way, so you don’t have to.
+          </p>
+        </div>
+      </div>
+
+      {/* Right: Image */}
+      <div className="flex justify-center lg:justify-end">
+        <div className="relative">
+          <img
+            src="/mike.jpg"
+            alt="Mike George"
+            className="h-[320px] w-[260px] rounded-3xl object-cover shadow-lg sm:h-[420px] sm:w-[340px]"
+          />
+
+          <div className="absolute bottom-3 left-1/2 w-[92%] -translate-x-1/2 rounded-2xl border border-slate-200 bg-white/90 p-3 shadow-lg shadow-amber-500/20">
+            <div className="text-sm font-semibold">Mike George</div>
+            <div className="text-xs text-slate-600 whitespace-nowrap">
+              Founder — Scars, Lessons & Triumphs
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+</section>
 
               <div className="mt-8 flex flex-wrap gap-3">
                 <button
