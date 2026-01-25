@@ -157,18 +157,17 @@ function Home() {
               </div>
 
 {/* About SLT */}
-<div className="mt-6 rounded-3xl border border-slate-200 bg-white p-5 sm:p-6">
-  <div className="flex items-center justify-between gap-3">
-    <h2 className="text-base sm:text-lg font-bold tracking-tight">
-      About SLT{" "}
-      <span className="text-slate-500 font-semibold">
-        (Scars, Lessons & Triumphs)
-      </span>
-    </h2>
-    <div className="h-1 w-10 rounded-full slt-accent-bg"></div>
-  </div>
+<div className="mt-8">
+  <h2 className="text-lg font-bold tracking-tight">
+    About SLT{" "}
+    <span className="text-slate-500 font-semibold">
+      (Scars, Lessons & Triumphs)
+    </span>
+  </h2>
 
-  <div className="mt-4 space-y-4 text-sm text-slate-600 leading-relaxed">
+  <div className="mt-3 h-1 w-16 rounded-full slt-accent-bg"></div>
+
+  <div className="mt-4 space-y-4 max-w-xl text-sm text-slate-600 leading-relaxed">
     <p>
       SLT was created to capture the lessons I’ve learned throughout my career,
       the experiences that shaped the leader I am today, and how I approach
@@ -177,9 +176,9 @@ function Home() {
 
     <p>
       <span className="font-semibold text-slate-800">Scars, Lessons & Triumphs</span>{" "}
-      is deliberately named, because it reflects the journey I’ve lived:
-      the wins I’m proud of, the failures that tested me, and the moments in between
-      that taught me the most.
+      is deliberately named, because it reflects the journey I’ve lived: the wins
+      I’m proud of, the failures that tested me, and the moments in between that
+      taught me the most.
     </p>
 
     <p>
