@@ -131,9 +131,9 @@ function Home() {
               </h1>
               <div className="mt-4 h-1 w-20 rounded-full slt-accent-bg"></div>
 
-              <p className="mt-5 text-lg text-slate-600">
-                Real leadership lessons from the front line of procurement and performance.
-              </p>
+<p className="mt-5 text-lg text-slate-600 whitespace-nowrap overflow-hidden text-ellipsis">
+  Real leadership lessons from the front line of procurement and performance.
+</p>
 
               <div className="mt-8 flex flex-wrap gap-3">
                 <button
