@@ -241,31 +241,27 @@ function Home() {
             learned through pressure, mistakes, resilience, and wins.
           </p>
 
-          {/* AMBER TILES */}
+          {/* BACK TO ORIGINAL WHITE TILES */}
           <div className="mt-10 grid gap-4 md:grid-cols-3">
-            <div className="rounded-3xl border border-amber-200 bg-amber-50 p-6">
-              <div className="text-sm font-semibold text-amber-900">Scars</div>
-              <p className="mt-2 text-sm text-amber-900/80">
+            <div className="rounded-3xl border border-slate-200 bg-white p-6">
+              <div className="text-sm font-semibold">Scars</div>
+              <p className="mt-2 text-sm text-slate-600">
                 The moments that tested me. The hard calls. The failures I
                 learned from.
               </p>
             </div>
 
-            <div className="rounded-3xl border border-amber-200 bg-amber-50 p-6">
-              <div className="text-sm font-semibold text-amber-900">
-                Lessons
-              </div>
-              <p className="mt-2 text-sm text-amber-900/80">
+            <div className="rounded-3xl border border-slate-200 bg-white p-6">
+              <div className="text-sm font-semibold">Lessons</div>
+              <p className="mt-2 text-sm text-slate-600">
                 The insight I earned: decision-making, influence, discipline,
                 consistency.
               </p>
             </div>
 
-            <div className="rounded-3xl border border-amber-200 bg-amber-50 p-6">
-              <div className="text-sm font-semibold text-amber-900">
-                Triumphs
-              </div>
-              <p className="mt-2 text-sm text-amber-900/80">
+            <div className="rounded-3xl border border-slate-200 bg-white p-6">
+              <div className="text-sm font-semibold">Triumphs</div>
+              <p className="mt-2 text-sm text-slate-600">
                 The outcomes: team success, business performance, and personal
                 growth.
               </p>
@@ -283,19 +279,17 @@ function Home() {
             others create impact.
           </p>
 
-          {/* UPDATED: STORY CARDS NOW AMBER TOO */}
+          {/* BACK TO ORIGINAL WHITE STORY CARDS */}
           <div className="mt-10 grid gap-4 md:grid-cols-2">
             {storyCards.map((item) => (
               <Link
                 key={item.slug}
                 to={`/stories/${item.slug}`}
-                className="block text-left rounded-3xl border border-amber-200 bg-amber-50 p-6 hover:shadow-md transition"
+                className="block text-left rounded-3xl border border-slate-200 bg-white p-6 hover:shadow-md transition"
               >
-                <div className="text-sm font-semibold text-amber-900">
-                  {item.title}
-                </div>
-                <p className="mt-2 text-sm text-amber-900/80">{item.desc}</p>
-                <div className="mt-4 text-xs font-semibold text-amber-700">
+                <div className="text-sm font-semibold">{item.title}</div>
+                <p className="mt-2 text-sm text-slate-600">{item.desc}</p>
+                <div className="mt-4 text-xs font-semibold text-amber-600">
                   Read more →
                 </div>
               </Link>
@@ -537,10 +531,6 @@ export default function App() {
       />
       <Route
         path="/stories/procurement-as-value/supplier-reduction-consolidation"
-        element={<SupplierReductionConsolidation />}
-      />
-      <Route
-        path="/stories/procurement-as-value/nec-designed-for-collaboration"
         element={<SupplierReductionConsolidation />}
       />
       <Route
