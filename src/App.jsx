@@ -132,18 +132,16 @@ function Home() {
 
                 <div className="mt-5 flex flex-wrap gap-3">
                   <span className="inline-flex items-center rounded-full border border-amber-200 bg-amber-50 px-4 py-2 text-sm font-semibold text-amber-900">
-                    Leadership
+                    38+ years experience
                   </span>
                   <span className="inline-flex items-center rounded-full border border-amber-200 bg-amber-50 px-4 py-2 text-sm font-semibold text-amber-900">
-                    Procurement
+                    25+ years procurement leadership
                   </span>
                   <span className="inline-flex items-center rounded-full border border-amber-200 bg-amber-50 px-4 py-2 text-sm font-semibold text-amber-900">
-                    Real Stories
+                    UK & Middle East
                   </span>
                 </div>
               </div>
-
-              {/* Buttons REMOVED */}
             </div>
           </div>
         </div>
@@ -228,29 +226,7 @@ function Home() {
             </div>
           </div>
 
-          {/* Focus / Style / Intent tiles (BIGGER) */}
-          <div className="mt-12 grid gap-4 sm:grid-cols-3">
-            <div className="rounded-3xl border border-slate-200 bg-white p-6">
-              <div className="text-sm font-semibold text-slate-500">Focus</div>
-              <div className="mt-2 text-base font-semibold">
-                Business → Team → Individual
-              </div>
-            </div>
-
-            <div className="rounded-3xl border border-slate-200 bg-white p-6">
-              <div className="text-sm font-semibold text-slate-500">Style</div>
-              <div className="mt-2 text-base font-semibold">
-                Supportive → Respectful → Real
-              </div>
-            </div>
-
-            <div className="rounded-3xl border border-slate-200 bg-white p-6">
-              <div className="text-sm font-semibold text-slate-500">Intent</div>
-              <div className="mt-2 text-base font-semibold">
-                Teach → Challenge → Inspire
-              </div>
-            </div>
-          </div>
+          {/* Focus / Style / Intent tiles REMOVED */}
         </div>
       </section>
 
