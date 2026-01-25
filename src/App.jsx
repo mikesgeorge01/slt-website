@@ -211,12 +211,7 @@ function Home() {
           <div className="grid gap-8 lg:grid-cols-2 lg:items-start">
             {/* Left: Text */}
             <div>
-              <h2 className="text-2xl font-bold tracking-tight">
-                About SLT{" "}
-                <span className="text-slate-500 font-semibold">
-                  (Scars, Lessons & Triumphs)
-                </span>
-              </h2>
+<h2 className="text-2xl font-bold tracking-tight">About SLT</h2>
 
               <div className="mt-4 h-1 w-16 rounded-full slt-accent-bg"></div>
 
