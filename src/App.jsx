@@ -130,44 +130,20 @@ function Home() {
                   complexity, pressure and change.
                 </p>
 
-                <div className="mt-4 flex flex-wrap gap-2">
-                  <span className="inline-flex items-center rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-900">
+                <div className="mt-5 flex flex-wrap gap-3">
+                  <span className="inline-flex items-center rounded-full border border-amber-200 bg-amber-50 px-4 py-2 text-sm font-semibold text-amber-900">
                     38+ years experience
                   </span>
-                  <span className="inline-flex items-center rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-900">
+                  <span className="inline-flex items-center rounded-full border border-amber-200 bg-amber-50 px-4 py-2 text-sm font-semibold text-amber-900">
                     25+ years procurement leadership
                   </span>
-                  <span className="inline-flex items-center rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-900">
+                  <span className="inline-flex items-center rounded-full border border-amber-200 bg-amber-50 px-4 py-2 text-sm font-semibold text-amber-900">
                     UK & Middle East
                   </span>
                 </div>
               </div>
 
-              <div className="mt-8 flex flex-wrap gap-3">
-                <button
-                  type="button"
-                  onClick={() =>
-                    document
-                      .getElementById("stories")
-                      ?.scrollIntoView({ behavior: "smooth" })
-                  }
-                  className="rounded-2xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white shadow-sm shadow-amber-500/30 hover:bg-slate-800 hover:shadow-md hover:shadow-amber-500/40 transition"
-                >
-                  Explore stories
-                </button>
-
-                <button
-                  type="button"
-                  onClick={() =>
-                    document
-                      .getElementById("speaking")
-                      ?.scrollIntoView({ behavior: "smooth" })
-                  }
-                  className="rounded-2xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-800 hover:bg-slate-50"
-                >
-                  Speaking
-                </button>
-              </div>
+              {/* Buttons REMOVED */}
             </div>
           </div>
         </div>
@@ -252,25 +228,25 @@ function Home() {
             </div>
           </div>
 
-          {/* Focus / Style / Intent tiles */}
-          <div className="mt-10 grid gap-3 sm:grid-cols-3">
-            <div className="rounded-3xl border border-slate-200 bg-white p-4">
-              <div className="text-xs font-semibold text-slate-500">Focus</div>
-              <div className="mt-1 text-sm font-semibold">
+          {/* Focus / Style / Intent tiles (BIGGER) */}
+          <div className="mt-12 grid gap-4 sm:grid-cols-3">
+            <div className="rounded-3xl border border-slate-200 bg-white p-6">
+              <div className="text-sm font-semibold text-slate-500">Focus</div>
+              <div className="mt-2 text-base font-semibold">
                 Business → Team → Individual
               </div>
             </div>
 
-            <div className="rounded-3xl border border-slate-200 bg-white p-4">
-              <div className="text-xs font-semibold text-slate-500">Style</div>
-              <div className="mt-1 text-sm font-semibold">
+            <div className="rounded-3xl border border-slate-200 bg-white p-6">
+              <div className="text-sm font-semibold text-slate-500">Style</div>
+              <div className="mt-2 text-base font-semibold">
                 Supportive → Respectful → Real
               </div>
             </div>
 
-            <div className="rounded-3xl border border-slate-200 bg-white p-4">
-              <div className="text-xs font-semibold text-slate-500">Intent</div>
-              <div className="mt-1 text-sm font-semibold">
+            <div className="rounded-3xl border border-slate-200 bg-white p-6">
+              <div className="text-sm font-semibold text-slate-500">Intent</div>
+              <div className="mt-2 text-base font-semibold">
                 Teach → Challenge → Inspire
               </div>
             </div>
