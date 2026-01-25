@@ -327,7 +327,7 @@ function Home() {
 
           <p className="mt-4 max-w-3xl text-slate-600">
             My articles are organised into four pillars. Select a pillar and
-            explore articles that will transform your leadership.
+            explore articles that will help transform your leadership.
           </p>
 
           <div className="mt-10 grid gap-4 md:grid-cols-2">
