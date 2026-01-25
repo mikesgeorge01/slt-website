@@ -148,7 +148,8 @@ function Home() {
 
           <nav className="hidden md:flex items-center gap-1">
             <NavLink to="home">Home</NavLink>
-            <NavLink to="about">About</NavLink>
+            {/* UPDATED: About now targets About SLT section */}
+            <NavLink to="about-slt">About</NavLink>
             <NavLink to="stories">Articles</NavLink>
             <NavLink to="speaking">Speaking</NavLink>
             <NavLink to="news">News</NavLink>
@@ -206,7 +207,10 @@ function Home() {
       </section>
 
       {/* About SLT (GREY) */}
-      <section className="border-t border-slate-200 bg-slate-50 py-10 sm:py-12">
+      <section
+        id="about-slt"
+        className="border-t border-slate-200 bg-slate-50 py-10 sm:py-12"
+      >
         <div className="mx-auto max-w-6xl px-4">
           <div className="grid gap-8 lg:grid-cols-2 lg:items-start">
             {/* Left: Text */}
@@ -369,7 +373,7 @@ function Home() {
             and built to drive action.
           </p>
 
-          {/* UPDATED: same animated tiles as SLT section */}
+          {/* Speaking tiles styled like SLT tiles */}
           <div className="mt-10 grid gap-4 md:grid-cols-3">
             <FadeIn delayMs={0}>
               <SLTTile title="Leadership Standards">
