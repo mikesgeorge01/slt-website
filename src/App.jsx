@@ -1,3 +1,4 @@
+import SupplierReductionConsolidation from "./pages/SupplierReductionConsolidation";
 import HighPerformingTeam from "./pages/HighPerformingTeam";
 import WorkLifeBalanceLeadership from "./pages/WorkLifeBalanceLeadership";
 import StrategicSourcingPitfalls from "./pages/StrategicSourcingPitfalls";
@@ -516,6 +517,11 @@ export default function App() {
 <Route
   path="/stories/organisational-performance/high-performing-team"
   element={<HighPerformingTeam />}
+/>
+
+<Route
+  path="/stories/procurement-as-value/supplier-reduction-consolidation"
+  element={<SupplierReductionConsolidation />}
 />
     </Routes>
   );

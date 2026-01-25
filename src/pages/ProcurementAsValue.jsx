@@ -117,8 +117,15 @@ export default function ProcurementAsValue() {
   </div>
 </Link>
 
+<Link
+  to="/stories/procurement-as-value/supplier-reduction-consolidation"
+  className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition block"
+>
+  <div className="text-sm font-semibold">Supplier Reduction &amp; Consolidation</div>
+  <div className="mt-2 text-xs font-semibold text-amber-600">Read more →</div>
+</Link>
+
           {[
-            "Supplier reduction and consolidation",
             "NEC Contracting, designed for colloboration",
             "Make vs. Buy, why Procurement sits at the heart of the decision",
           ].map((x) => (
