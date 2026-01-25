@@ -276,8 +276,7 @@ function Home() {
           <h2 className="text-2xl font-bold tracking-tight">Insights & Articles</h2>
 
           <p className="mt-4 max-w-3xl text-slate-600">
-            My articles are organised into four pillars. Select a pillar and explore
-            articles that will transform your leadership.
+            My articles are organised into four pillars. Select a pillar and explore articles that will transform your leadership.
           </p>
 
           <div className="mt-10 grid gap-4 md:grid-cols-2">
