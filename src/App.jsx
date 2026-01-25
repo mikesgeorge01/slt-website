@@ -211,7 +211,7 @@ function Home() {
           <div className="grid gap-8 lg:grid-cols-2 lg:items-start">
             {/* Left: Text */}
             <div>
-<h2 className="text-2xl font-bold tracking-tight">About SLT</h2>
+              <h2 className="text-2xl font-bold tracking-tight">About SLT</h2>
 
               <div className="mt-4 h-1 w-16 rounded-full slt-accent-bg"></div>
 
@@ -294,7 +294,7 @@ function Home() {
             learned through pressure, mistakes, resilience, and wins.
           </p>
 
-          {/* Animated tiles (fade-in on scroll + subtle hover) */}
+          {/* Animated tiles */}
           <div className="mt-10 grid gap-4 md:grid-cols-3">
             <FadeIn delayMs={0}>
               <SLTTile title="Scars">
@@ -326,8 +326,8 @@ function Home() {
           <h2 className="text-2xl font-bold tracking-tight">Insights & Articles</h2>
 
           <p className="mt-4 max-w-3xl text-slate-600">
-            My articles are organised into four pillars. Select a pillar and
-            explore articles that will help transform your leadership.
+            My articles are organised into four pillars. Select a pillar and explore
+            articles that will transform your leadership.
           </p>
 
           <div className="mt-10 grid gap-4 md:grid-cols-2">
@@ -369,29 +369,25 @@ function Home() {
             and built to drive action.
           </p>
 
+          {/* UPDATED: same animated tiles as SLT section */}
           <div className="mt-10 grid gap-4 md:grid-cols-3">
-            {[
-              {
-                title: "Leadership Standards",
-                desc: "Respect, accountability, trust, and discipline, made practical.",
-              },
-              {
-                title: "High-performing Teams",
-                desc: "What ‘great’ looks like, and how to build it deliberately.",
-              },
-              {
-                title: "Procurement Transformation",
-                desc: "From transaction to strategic value, governance, outcomes, culture.",
-              },
-            ].map((item) => (
-              <div
-                key={item.title}
-                className="rounded-3xl border border-slate-200 bg-white p-6"
-              >
-                <div className="text-sm font-semibold">{item.title}</div>
-                <p className="mt-2 text-sm text-slate-600">{item.desc}</p>
-              </div>
-            ))}
+            <FadeIn delayMs={0}>
+              <SLTTile title="Leadership Standards">
+                Respect, accountability, trust, and discipline, made practical.
+              </SLTTile>
+            </FadeIn>
+
+            <FadeIn delayMs={120}>
+              <SLTTile title="High-performing Teams">
+                What ‘great’ looks like, and how to build it deliberately.
+              </SLTTile>
+            </FadeIn>
+
+            <FadeIn delayMs={240}>
+              <SLTTile title="Procurement Transformation">
+                From transaction to strategic value, governance, outcomes, culture.
+              </SLTTile>
+            </FadeIn>
           </div>
         </div>
       </section>
