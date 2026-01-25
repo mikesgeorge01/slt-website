@@ -277,8 +277,9 @@ function Home() {
           {/* UPDATED HEADING */}
           <h2 className="text-2xl font-bold tracking-tight">Insights & Articles</h2>
           <p className="mt-4 max-w-3xl text-slate-600">
-            Practical frameworks, honest thinking, and leadership stories to help
-            others create impact.
+All articles are structured across four core pillars. 
+Select a pillar to explore insights, lessons, and practical 
+thinking to support your development and impact
           </p>
 
           {/* ORIGINAL WHITE STORY CARDS */}
