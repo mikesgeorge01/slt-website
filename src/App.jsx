@@ -91,7 +91,7 @@ function Home() {
           <nav className="hidden md:flex items-center gap-1">
             <NavLink to="home">Home</NavLink>
             <NavLink to="about">About</NavLink>
-            <NavLink to="stories">Stories</NavLink>
+<NavLink to="stories">Articles</NavLink>
             <NavLink to="speaking">Speaking</NavLink>
             <NavLink to="news">News</NavLink>
             <NavLink to="contact">Contact</NavLink>
