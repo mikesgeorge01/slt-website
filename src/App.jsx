@@ -1,3 +1,4 @@
+import NecVsFidic from "./pages/NecVsFidic";
 import ProcurementBuiltOnTrust from "./pages/ProcurementBuiltOnTrust";
 import FallInLoveWithYourLife2026 from "./pages/FallInLoveWithYourLife2026";
 import DisciplineAboveEverythingElse from "./pages/DisciplineAboveEverythingElse";
@@ -492,6 +493,11 @@ export default function App() {
       <Route
   path="/stories/procurement-as-value/procurement-built-on-trust"
   element={<ProcurementBuiltOnTrust />}
+/>
+
+<Route
+  path="/stories/procurement-as-value/nec-vs-fidic"
+  element={<NecVsFidic />}
 />
     </Routes>
   );

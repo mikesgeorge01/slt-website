@@ -93,8 +93,19 @@ export default function ProcurementAsValue() {
             </div>
           </Link>
 
+<Link
+  to="/stories/procurement-as-value/nec-vs-fidic"
+  className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition block"
+>
+  <div className="text-sm font-semibold">
+    NEC vs FIDIC – What’s the real difference?
+  </div>
+  <div className="mt-2 text-xs font-semibold text-amber-600">
+    Read more →
+  </div>
+</Link>
+
           {[
-            "NEC vs FDIC, whats the real difference",
             "The pitfalls to look out for in strategic sourcing",
             "Supplier reduction and consolidation",
             "NEC Contracting, designed for colloboration",
