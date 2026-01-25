@@ -47,14 +47,6 @@ function NavLink({ to, children }) {
   );
 }
 
-function Pill({ children }) {
-  return (
-    <span className="inline-flex items-center rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold text-slate-600">
-      {children}
-    </span>
-  );
-}
-
 function Home() {
   const year = useMemo(() => new Date().getFullYear(), []);
 
@@ -120,16 +112,10 @@ function Home() {
       {/* Hero */}
       <section id="home" className="relative">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:py-20">
-          {/* Single column hero (image removed) */}
+          {/* Single column hero */}
           <div className="grid items-center gap-10">
             <div>
-              <div className="flex flex-wrap gap-2">
-                <Pill>Leadership</Pill>
-                <Pill>Procurement</Pill>
-                <Pill>Real Stories</Pill>
-              </div>
-
-              <h1 className="mt-6 text-4xl font-extrabold tracking-tight leading-none sm:text-5xl sm:whitespace-nowrap">
+              <h1 className="text-4xl font-extrabold tracking-tight leading-none sm:text-5xl sm:whitespace-nowrap">
                 Scars. Lessons. <span className="slt-accent">Triumphs.</span>
               </h1>
 
@@ -185,43 +171,14 @@ function Home() {
                   Speaking
                 </button>
               </div>
-
-              <div className="mt-8 grid gap-3 sm:grid-cols-3">
-                <div className="rounded-3xl border border-slate-200 bg-white p-4">
-                  <div className="text-xs font-semibold text-slate-500">
-                    Focus
-                  </div>
-                  <div className="mt-1 text-sm font-semibold">
-                    Business → Team → Individual
-                  </div>
-                </div>
-
-                <div className="rounded-3xl border border-slate-200 bg-white p-4">
-                  <div className="text-xs font-semibold text-slate-500">
-                    Style
-                  </div>
-                  <div className="mt-1 text-sm font-semibold">
-                    Supportive → Respectful → Real
-                  </div>
-                </div>
-
-                <div className="rounded-3xl border border-slate-200 bg-white p-4">
-                  <div className="text-xs font-semibold text-slate-500">
-                    Intent
-                  </div>
-                  <div className="mt-1 text-sm font-semibold">
-                    Teach → Challenge → Inspire
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
 
-        {/* Full-width divider (true edge-to-edge) */}
+        {/* Full-width divider */}
         <div className="w-full border-t border-slate-200/70"></div>
 
-        {/* About SLT (text left, image right) */}
+        {/* About SLT */}
         <section className="py-10 sm:py-12">
           <div className="mx-auto max-w-6xl px-4">
             <div className="grid gap-8 lg:grid-cols-2 lg:items-start">
@@ -238,9 +195,10 @@ function Home() {
 
                 <div className="mt-5 space-y-4 text-sm text-slate-600 leading-relaxed max-w-2xl">
                   <p>
-                    SLT was created to capture the lessons I’ve learned throughout
-                    my career, the experiences that shaped the leader I am today,
-                    and how I approach people, performance, and purpose.
+                    SLT was created to capture the lessons I’ve learned
+                    throughout my career, the experiences that shaped the leader
+                    I am today, and how I approach people, performance, and
+                    purpose.
                   </p>
 
                   <p>
@@ -248,15 +206,15 @@ function Home() {
                       Scars, Lessons & Triumphs
                     </span>{" "}
                     is deliberately named, because it reflects the journey I’ve
-                    lived: the wins I’m proud of, the failures that tested me, and
-                    the moments in between that taught me the most.
+                    lived: the wins I’m proud of, the failures that tested me,
+                    and the moments in between that taught me the most.
                   </p>
 
                   <p>
                     I’ve been fortunate to work alongside brilliant leaders who
-                    challenged my thinking, raised my standards, and helped shape
-                    my values. Those hard-earned insights, combined with my own
-                    experience, became the lessons that matter most.
+                    challenged my thinking, raised my standards, and helped
+                    shape my values. Those hard-earned insights, combined with
+                    my own experience, became the lessons that matter most.
                   </p>
 
                   <p>
@@ -296,6 +254,30 @@ function Home() {
                       Founder — Scars, Lessons & Triumphs
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Focus / Style / Intent tiles moved here */}
+            <div className="mt-10 grid gap-3 sm:grid-cols-3">
+              <div className="rounded-3xl border border-slate-200 bg-white p-4">
+                <div className="text-xs font-semibold text-slate-500">Focus</div>
+                <div className="mt-1 text-sm font-semibold">
+                  Business → Team → Individual
+                </div>
+              </div>
+
+              <div className="rounded-3xl border border-slate-200 bg-white p-4">
+                <div className="text-xs font-semibold text-slate-500">Style</div>
+                <div className="mt-1 text-sm font-semibold">
+                  Supportive → Respectful → Real
+                </div>
+              </div>
+
+              <div className="rounded-3xl border border-slate-200 bg-white p-4">
+                <div className="text-xs font-semibold text-slate-500">Intent</div>
+                <div className="mt-1 text-sm font-semibold">
+                  Teach → Challenge → Inspire
                 </div>
               </div>
             </div>
