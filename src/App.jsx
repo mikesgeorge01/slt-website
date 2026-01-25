@@ -97,13 +97,14 @@ function Home() {
             <NavLink to="contact">Contact</NavLink>
           </nav>
 
+          {/* UPDATED TOP BUTTON TEXT */}
           <a
             href={LINKEDIN_URL}
             target="_blank"
             rel="noreferrer"
             className="rounded-2xl bg-amber-500 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-amber-600 transition"
           >
-            Follow on LinkedIn
+            Connect on LinkedIn
           </a>
         </div>
       </header>
@@ -241,13 +242,13 @@ function Home() {
             learned through pressure, mistakes, resilience, and wins.
           </p>
 
-          {/* BACK TO ORIGINAL WHITE TILES */}
+          {/* ORIGINAL WHITE TILES */}
           <div className="mt-10 grid gap-4 md:grid-cols-3">
             <div className="rounded-3xl border border-slate-200 bg-white p-6">
               <div className="text-sm font-semibold">Scars</div>
               <p className="mt-2 text-sm text-slate-600">
-                The moments that tested me. The hard calls. The failures I
-                learned from.
+                The moments that tested me. The hard calls. The failures I learned
+                from.
               </p>
             </div>
 
@@ -273,13 +274,14 @@ function Home() {
       {/* Stories (GREY) */}
       <section id="stories" className="border-t border-slate-200 bg-slate-50">
         <div className="mx-auto max-w-6xl px-4 py-14">
-          <h2 className="text-2xl font-bold tracking-tight">Stories & Themes</h2>
+          {/* UPDATED HEADING */}
+          <h2 className="text-2xl font-bold tracking-tight">Insights & Articles</h2>
           <p className="mt-4 max-w-3xl text-slate-600">
             Practical frameworks, honest thinking, and leadership stories to help
             others create impact.
           </p>
 
-          {/* BACK TO ORIGINAL WHITE STORY CARDS */}
+          {/* ORIGINAL WHITE STORY CARDS */}
           <div className="mt-10 grid gap-4 md:grid-cols-2">
             {storyCards.map((item) => (
               <Link
