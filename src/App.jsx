@@ -1,3 +1,4 @@
+import MakeVsBuyProcurementHeartDecision from "./pages/MakeVsBuyProcurementHeartDecision";
 import FiveSDisciplineOperationalExcellence from "./pages/FiveSDisciplineOperationalExcellence";
 import React, { useMemo } from "react";
 import { Routes, Route, Link } from "react-router-dom";
@@ -591,6 +592,10 @@ export default function App() {
       <Route
   path="/stories/organisational-performance/5s-discipline-operational-excellence"
   element={<FiveSDisciplineOperationalExcellence />}
+/>
+<Route
+  path="/stories/procurement-as-value/make-vs-buy-procurement-heart-of-decision"
+  element={<MakeVsBuyProcurementHeartDecision />}
 />
     </Routes>
   );
