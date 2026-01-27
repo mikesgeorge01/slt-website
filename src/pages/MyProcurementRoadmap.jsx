@@ -66,23 +66,23 @@ export default function MyProcurementRoadmap() {
         <ul className="mt-4 list-disc pl-6 text-slate-600 space-y-1">
           <li>1️⃣ Relationships are as important as contracts.</li>
           <li>2️⃣ Procurement is a strategic enabler, not just a transactional function.</li>
-          <li>3️⃣ Change is constant - adaptability is resilience.</li>
+          <li>3️⃣ Change is constant, adaptability is resilience.</li>
           <li>4️⃣ Data drives decisions, but people deliver outcomes.</li>
           <li>5️⃣ Integrity is non-negotiable.</li>
         </ul>
 
         <p className="mt-6 font-semibold text-slate-900">Practical lessons:</p>
         <ul className="mt-4 list-disc pl-6 text-slate-600 space-y-1">
-          <li>1️⃣ Keep it clear - avoid jargon with stakeholders.</li>
+          <li>1️⃣ Keep it clear, avoid jargon with stakeholders.</li>
           <li>2️⃣ 15% of requirements are unique, 85% are routine.</li>
           <li>3️⃣ Spend data is your foundation.</li>
           <li>4️⃣ Compliance safeguards both you and the business.</li>
-          <li>5️⃣ Own it end-to-end - accountability matters.</li>
-          <li>6️⃣ Sit with your stakeholders - decisions move faster.</li>
-          <li>7️⃣ See what you’re buying - context matters.</li>
-          <li>8️⃣ Reporting lines are secondary - flex your style.</li>
+          <li>5️⃣ Own it end-to-end, accountability matters.</li>
+          <li>6️⃣ Sit with your stakeholders, decisions move faster.</li>
+          <li>7️⃣ See what you’re buying, context matters.</li>
+          <li>8️⃣ Reporting lines are secondary, flex your style.</li>
           <li>9️⃣ Beware of “PowerPoint consultants.”</li>
-          <li>🔟 Procurement isn’t hard - people make it hard.</li>
+          <li>🔟 Procurement isn’t hard, people make it hard.</li>
         </ul>
 
         <p className="mt-6 text-slate-600 leading-relaxed">
