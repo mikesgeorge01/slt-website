@@ -328,44 +328,45 @@ function Home() {
         </div>
       </section>
 
-      {/* Start here (GREY) */}
-      <section className="border-t border-slate-200 bg-slate-50 py-10 sm:py-12">
-        <div className="mx-auto max-w-6xl px-4">
-          <div className="grid gap-6 lg:grid-cols-2 lg:items-center">
-            <div>
-              <h2 className="text-2xl font-bold tracking-tight">Start here</h2>
-              <div className="mt-4 h-1 w-16 rounded-full slt-accent-bg"></div>
+{/* Start here (GREY) */}
+<section className="border-t border-slate-200 bg-slate-50 py-10 sm:py-12">
+  <div className="mx-auto max-w-6xl px-4">
+    <div className="max-w-3xl">
+      <h2 className="text-2xl font-bold tracking-tight">Start here</h2>
+      <div className="mt-4 h-1 w-16 rounded-full slt-accent-bg"></div>
 
-              <p className="mt-6 max-w-2xl text-lg text-slate-600">
-                If your journey with SLT is just beginning, 
-                start here, one of my very first LinkedIn posts and, to date, the most widely read.
-              </p>
+      <p className="mt-6 text-lg text-slate-600">
+        If your journey in SLT is new, you can start here, one of my very
+        first LinkedIn posts and by far my most popular.
+      </p>
 
-              <p className="mt-4 max-w-2xl text-slate-600">
-                Or, if you prefer, dive straight into the articles 
-                and themes that resonate most with you.
-              </p>
+      <p className="mt-4 text-slate-600">
+        Alternatively you can dive straight into the content in articles
+        and themes.
+      </p>
 
-              <div className="mt-6 flex flex-wrap gap-3">
-                <Link
-                  to="/start-here/my-procurement-roadmap"
-                  className="inline-flex items-center justify-center rounded-2xl bg-amber-500 px-5 py-3 text-sm font-semibold text-white shadow hover:bg-amber-600 transition"
-                >
-                  My Procurement Roadmap
-                </Link>
+      <div className="mt-6 flex flex-wrap gap-3">
+        <Link
+          to="/start-here/my-procurement-roadmap"
+          className="inline-flex items-center justify-center rounded-2xl bg-amber-500 px-5 py-3 text-sm font-semibold text-white shadow hover:bg-amber-600 transition"
+        >
+          My Procurement Roadmap
+        </Link>
 
-                <button
-                  type="button"
-                  onClick={() => {
-                    const el = document.getElementById("stories");
-                    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
-                  }}
-                  className="inline-flex items-center justify-center rounded-2xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-800 hover:bg-slate-100 transition"
-                >
-                  Browse Articles &amp; Themes
-                </button>
-              </div>
-            </div>
+        <button
+          type="button"
+          onClick={() => {
+            const el = document.getElementById("stories");
+            if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+          }}
+          className="inline-flex items-center justify-center rounded-2xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-800 hover:bg-slate-100 transition"
+        >
+          Browse Articles &amp; Themes
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
 
             <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
               <p className="text-sm font-semibold text-slate-900">
