@@ -1,8 +1,3 @@
-import WhyProcurementGovernanceIsANonNegotiable from "./pages/WhyProcurementGovernanceIsANonNegotiable";
-import EverySuccessStoryStartsByIgnoringYouCant from "./pages/EverySuccessStoryStartsByIgnoringYouCant";
-import TheArtOfBuildingRelationships from "./pages/TheArtOfBuildingRelationships";
-import MakeVsBuyProcurementHeartDecision from "./pages/MakeVsBuyProcurementHeartDecision";
-import FiveSDisciplineOperationalExcellence from "./pages/FiveSDisciplineOperationalExcellence";
 import React, { useMemo } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 
@@ -34,6 +29,13 @@ import NecDesignedForCollaboration from "./pages/NecDesignedForCollaboration";
 
 import WorkLifeBalanceLeadership from "./pages/WorkLifeBalanceLeadership";
 import HighPerformingTeam from "./pages/HighPerformingTeam";
+
+import FiveSDisciplineOperationalExcellence from "./pages/FiveSDisciplineOperationalExcellence";
+import MakeVsBuyProcurementHeartDecision from "./pages/MakeVsBuyProcurementHeartDecision";
+import TheArtOfBuildingRelationships from "./pages/TheArtOfBuildingRelationships";
+import EverySuccessStoryStartsByIgnoringYouCant from "./pages/EverySuccessStoryStartsByIgnoringYouCant";
+import WhyProcurementGovernanceIsANonNegotiable from "./pages/WhyProcurementGovernanceIsANonNegotiable";
+import MyProcurementRoadmap from "./pages/MyProcurementRoadmap";
 
 const LINKEDIN_URL = "https://linkedin.com/in/mikegeorge12";
 
@@ -153,7 +155,6 @@ function Home() {
 
           <nav className="hidden md:flex items-center gap-1">
             <NavLink to="home">Home</NavLink>
-            {/* UPDATED: About now targets About SLT section */}
             <NavLink to="about-slt">About</NavLink>
             <NavLink to="stories">Articles</NavLink>
             <NavLink to="speaking">Speaking</NavLink>
@@ -287,8 +288,6 @@ function Home() {
               </div>
             </div>
           </div>
-
-          {/* Focus / Style / Intent tiles REMOVED */}
         </div>
       </section>
 
@@ -329,8 +328,63 @@ function Home() {
         </div>
       </section>
 
-      {/* Articles (GREY) */}
-      <section id="stories" className="border-t border-slate-200 bg-slate-50">
+      {/* Start here (GREY) */}
+      <section className="border-t border-slate-200 bg-slate-50 py-10 sm:py-12">
+        <div className="mx-auto max-w-6xl px-4">
+          <div className="grid gap-6 lg:grid-cols-2 lg:items-center">
+            <div>
+              <h2 className="text-2xl font-bold tracking-tight">Start here</h2>
+              <div className="mt-4 h-1 w-16 rounded-full slt-accent-bg"></div>
+
+              <p className="mt-6 max-w-2xl text-lg text-slate-600">
+                If your journey in SLT is new, you can start here, one of my very
+                first LinkedIn posts and by far my most popular.
+              </p>
+
+              <p className="mt-4 max-w-2xl text-slate-600">
+                Alternatively you can dive straight into the content in articles
+                and themes.
+              </p>
+
+              <div className="mt-6 flex flex-wrap gap-3">
+                <Link
+                  to="/start-here/my-procurement-roadmap"
+                  className="inline-flex items-center justify-center rounded-2xl bg-amber-500 px-5 py-3 text-sm font-semibold text-white shadow hover:bg-amber-600 transition"
+                >
+                  My Procurement Roadmap
+                </Link>
+
+                <button
+                  type="button"
+                  onClick={() => {
+                    const el = document.getElementById("stories");
+                    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+                  }}
+                  className="inline-flex items-center justify-center rounded-2xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-800 hover:bg-slate-100 transition"
+                >
+                  Browse Articles &amp; Themes
+                </button>
+              </div>
+            </div>
+
+            <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+              <p className="text-sm font-semibold text-slate-900">
+                A quick way to understand how I think about Procurement
+              </p>
+              <p className="mt-2 text-sm text-slate-600">
+                The strategic + practical lessons that shaped my approach over decades
+                in the trenches.
+              </p>
+              <div className="mt-4 text-xs font-semibold text-amber-600">
+                Start with the roadmap →
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Articles (WHITE) */}
+      <section id="stories" className="border-t border-slate-200 bg-white">
         <div className="mx-auto max-w-6xl px-4 py-14">
           <h2 className="text-2xl font-bold tracking-tight">Insights & Articles</h2>
 
@@ -368,8 +422,8 @@ function Home() {
         </div>
       </section>
 
-      {/* Speaking (WHITE) */}
-      <section id="speaking" className="border-t border-slate-200 bg-white">
+      {/* Speaking (GREY) */}
+      <section id="speaking" className="border-t border-slate-200 bg-slate-50">
         <div className="mx-auto max-w-6xl px-4 py-14">
           <h2 className="text-2xl font-bold tracking-tight">Speaking</h2>
           <p className="mt-4 max-w-3xl text-slate-600">
@@ -378,7 +432,6 @@ function Home() {
             and built to drive action.
           </p>
 
-          {/* Speaking tiles styled like SLT tiles */}
           <div className="mt-10 grid gap-4 md:grid-cols-3">
             <FadeIn delayMs={0}>
               <SLTTile title="Leadership Standards">
@@ -401,8 +454,8 @@ function Home() {
         </div>
       </section>
 
-      {/* News (GREY) */}
-      <section id="news" className="border-t border-slate-200 bg-slate-50">
+      {/* News (WHITE) */}
+      <section id="news" className="border-t border-slate-200 bg-white">
         <div className="mx-auto max-w-6xl px-4 py-14">
           <h2 className="text-2xl font-bold tracking-tight">News</h2>
           <p className="mt-4 max-w-3xl text-slate-600">
@@ -439,8 +492,8 @@ function Home() {
         </div>
       </section>
 
-      {/* Contact (WHITE) */}
-      <section id="contact" className="border-t border-slate-200 bg-white">
+      {/* Contact (GREY) */}
+      <section id="contact" className="border-t border-slate-200 bg-slate-50">
         <div className="mx-auto max-w-6xl px-4 py-14">
           <h2 className="text-2xl font-bold tracking-tight">Contact</h2>
           <p className="mt-4 max-w-3xl text-slate-600">
@@ -468,7 +521,7 @@ function Home() {
         </div>
       </section>
 
-      <footer className="border-t border-slate-200 bg-slate-50">
+      <footer className="border-t border-slate-200 bg-white">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-8 text-sm text-slate-600">
           <div>© {year} SLT — Scars, Lessons & Triumphs</div>
           <a
@@ -489,6 +542,9 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+
+      {/* Start here */}
+      <Route path="/start-here/my-procurement-roadmap" element={<MyProcurementRoadmap />} />
 
       <Route
         path="/stories/organisational-performance"
@@ -592,26 +648,27 @@ export default function App() {
         path="/stories/procurement-as-value/nec-designed-for-collaboration"
         element={<NecDesignedForCollaboration />}
       />
+
       <Route
-  path="/stories/organisational-performance/5s-discipline-operational-excellence"
-  element={<FiveSDisciplineOperationalExcellence />}
-/>
-<Route
-  path="/stories/procurement-as-value/make-vs-buy-procurement-heart-of-decision"
-  element={<MakeVsBuyProcurementHeartDecision />}
-/>
-<Route
-  path="/stories/personal-development/the-art-of-building-relationships"
-  element={<TheArtOfBuildingRelationships />}
-/>
-<Route
-  path="/stories/leadership-that-inspires/every-success-story-starts-by-ignoring-you-cant"
-  element={<EverySuccessStoryStartsByIgnoringYouCant />}
-/>
-<Route
-  path="/stories/procurement-as-value/why-procurement-governance-is-a-non-negotiable"
-  element={<WhyProcurementGovernanceIsANonNegotiable />}
-/>
+        path="/stories/organisational-performance/5s-discipline-operational-excellence"
+        element={<FiveSDisciplineOperationalExcellence />}
+      />
+      <Route
+        path="/stories/procurement-as-value/make-vs-buy-procurement-heart-of-decision"
+        element={<MakeVsBuyProcurementHeartDecision />}
+      />
+      <Route
+        path="/stories/personal-development/the-art-of-building-relationships"
+        element={<TheArtOfBuildingRelationships />}
+      />
+      <Route
+        path="/stories/leadership-that-inspires/every-success-story-starts-by-ignoring-you-cant"
+        element={<EverySuccessStoryStartsByIgnoringYouCant />}
+      />
+      <Route
+        path="/stories/procurement-as-value/why-procurement-governance-is-a-non-negotiable"
+        element={<WhyProcurementGovernanceIsANonNegotiable />}
+      />
     </Routes>
   );
 }
