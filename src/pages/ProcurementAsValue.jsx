@@ -54,7 +54,6 @@ export default function ProcurementAsValue() {
 
         {/* Cards */}
         <div className="mt-10 grid gap-4 md:grid-cols-2">
-          {/* CLICKABLE CARD */}
           <Link
             to="/stories/idiots-guide-procurement"
             className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition block"
@@ -67,7 +66,6 @@ export default function ProcurementAsValue() {
             </div>
           </Link>
 
-          {/* CLICKABLE CARD */}
           <Link
             to="/stories/strategic-vs-operational-procurement"
             className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition block"
@@ -80,7 +78,6 @@ export default function ProcurementAsValue() {
             </div>
           </Link>
 
-          {/* CLICKABLE CARD */}
           <Link
             to="/stories/procurement-as-value/procurement-built-on-trust"
             className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition block"
@@ -141,13 +138,25 @@ export default function ProcurementAsValue() {
             </div>
           </Link>
 
-          {/* ✅ NEW CLICKABLE CARD: MAKE vs BUY */}
           <Link
             to="/stories/procurement-as-value/make-vs-buy-procurement-heart-of-decision"
             className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition block"
           >
             <div className="text-sm font-semibold">
               Make vs Buy: Why Procurement sits at the heart of the decision
+            </div>
+            <div className="mt-2 text-xs font-semibold text-amber-600">
+              Read more →
+            </div>
+          </Link>
+
+          {/* ✅ NEW ARTICLE */}
+          <Link
+            to="/stories/procurement-as-value/why-procurement-governance-is-a-non-negotiable"
+            className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition block"
+          >
+            <div className="text-sm font-semibold">
+              Why Procurement Governance Is a Non-Negotiable
             </div>
             <div className="mt-2 text-xs font-semibold text-amber-600">
               Read more →

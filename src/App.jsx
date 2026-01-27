@@ -1,3 +1,4 @@
+import WhyProcurementGovernanceIsANonNegotiable from "./pages/WhyProcurementGovernanceIsANonNegotiable";
 import EverySuccessStoryStartsByIgnoringYouCant from "./pages/EverySuccessStoryStartsByIgnoringYouCant";
 import TheArtOfBuildingRelationships from "./pages/TheArtOfBuildingRelationships";
 import MakeVsBuyProcurementHeartDecision from "./pages/MakeVsBuyProcurementHeartDecision";
@@ -606,6 +607,10 @@ export default function App() {
 <Route
   path="/stories/leadership-that-inspires/every-success-story-starts-by-ignoring-you-cant"
   element={<EverySuccessStoryStartsByIgnoringYouCant />}
+/>
+<Route
+  path="/stories/procurement-as-value/why-procurement-governance-is-a-non-negotiable"
+  element={<WhyProcurementGovernanceIsANonNegotiable />}
 />
     </Routes>
   );
