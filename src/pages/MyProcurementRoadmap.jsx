@@ -58,7 +58,7 @@ export default function MyProcurementRoadmap() {
         </p>
 
         <p className="mt-4 text-slate-600 leading-relaxed">
-          Along the way, I’ve gathered lessons - some strategic, some practical, that
+          Along the way, I’ve gathered lessons, some strategic, some practical, that
           continue to guide me today. Here's what I've learned by being in the trenches:
         </p>
 
