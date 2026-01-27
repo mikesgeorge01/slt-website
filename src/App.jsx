@@ -337,13 +337,13 @@ function Home() {
               <div className="mt-4 h-1 w-16 rounded-full slt-accent-bg"></div>
 
               <p className="mt-6 max-w-2xl text-lg text-slate-600">
-                If your journey in SLT is new, you can start here, one of my very
-                first LinkedIn posts and by far my most popular.
+                If your journey with SLT is just beginning, 
+                start here, one of my very first LinkedIn posts and, to date, the most widely read.
               </p>
 
               <p className="mt-4 max-w-2xl text-slate-600">
-                Alternatively you can dive straight into the content in articles
-                and themes.
+                Or, if you prefer, dive straight into the articles 
+                and themes that resonate most with you.
               </p>
 
               <div className="mt-6 flex flex-wrap gap-3">
