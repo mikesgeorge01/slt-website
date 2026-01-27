@@ -54,8 +54,8 @@ export default function WhyProcurementGovernanceIsANonNegotiable() {
         <div className="mt-4 h-1 w-20 rounded-full bg-amber-500"></div>
 
         <p className="mt-8 text-lg text-slate-700 leading-relaxed">
-          In every organisation — whether it’s scaling at pace, delivering
-          mega-projects, or running complex operations — procurement governance
+          In every organisation, whether it’s scaling at pace, delivering
+          mega-projects, or running complex operations, procurement governance
           is a critical must-have for success.
         </p>
 
@@ -93,7 +93,7 @@ export default function WhyProcurementGovernanceIsANonNegotiable() {
           🔹 3. Creates consistency in how decisions are made
         </p>
         <p className="mt-2 text-slate-600 leading-relaxed">
-          Without governance, each department buys in its own way — different
+          Without governance, each department buys in its own way, different
           standards, different documentation, and different outcomes.
           Governance brings consistency in how suppliers are selected,
           evaluated, and managed.
@@ -104,8 +104,7 @@ export default function WhyProcurementGovernanceIsANonNegotiable() {
         </p>
         <p className="mt-2 text-slate-600 leading-relaxed">
           Boards and executive teams want evidence-based decisions. Governance
-          creates a clear audit trail, ensuring accountability at every step —
-          from business justification to award recommendation and contract
+          creates a clear audit trail, ensuring accountability at every step, from business justification to award recommendation and contract
           execution.
         </p>
 
@@ -120,7 +119,7 @@ export default function WhyProcurementGovernanceIsANonNegotiable() {
         </p>
 
         <p className="mt-8 text-slate-600 leading-relaxed font-semibold">
-          To summarise, procurement governance is not a barrier — it’s an
+          To summarise, procurement governance is not a barrier, it’s an
           enabler.
         </p>
 
