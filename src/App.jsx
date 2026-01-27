@@ -96,14 +96,11 @@ function FadeIn({ children, delayMs = 0 }) {
 function SLTTile({ title, children }) {
   return (
     <div className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
-      {/* animated accent line */}
       <div className="absolute left-0 top-0 h-1 w-full origin-left scale-x-0 bg-amber-500 transition-transform duration-300 group-hover:scale-x-100" />
-
       <div className="relative">
         <div className="text-sm font-semibold text-slate-900 transition-colors duration-300 group-hover:text-slate-950">
           {title}
         </div>
-
         <p className="mt-2 text-sm text-slate-600 transition-colors duration-300 group-hover:text-slate-700">
           {children}
         </p>
@@ -219,10 +216,8 @@ function Home() {
       >
         <div className="mx-auto max-w-6xl px-4">
           <div className="grid gap-8 lg:grid-cols-2 lg:items-start">
-            {/* Left: Text */}
             <div>
               <h2 className="text-2xl font-bold tracking-tight">About SLT</h2>
-
               <div className="mt-4 h-1 w-16 rounded-full slt-accent-bg"></div>
 
               <div className="mt-5 space-y-4 text-sm text-slate-600 leading-relaxed max-w-2xl">
@@ -270,7 +265,6 @@ function Home() {
               </div>
             </div>
 
-            {/* Right: Image */}
             <div className="flex justify-center lg:justify-end">
               <div className="relative">
                 <img
@@ -302,7 +296,6 @@ function Home() {
             learned through pressure, mistakes, resilience, and wins.
           </p>
 
-          {/* Animated tiles */}
           <div className="mt-10 grid gap-4 md:grid-cols-3">
             <FadeIn delayMs={0}>
               <SLTTile title="Scars">
@@ -328,57 +321,41 @@ function Home() {
         </div>
       </section>
 
-{/* Start here (GREY) */}
-<section className="border-t border-slate-200 bg-slate-50 py-10 sm:py-12">
-  <div className="mx-auto max-w-6xl px-4">
-    <div className="max-w-3xl">
-      <h2 className="text-2xl font-bold tracking-tight">Start here</h2>
-      <div className="mt-4 h-1 w-16 rounded-full slt-accent-bg"></div>
+      {/* Start here (GREY) */}
+      <section className="border-t border-slate-200 bg-slate-50 py-10 sm:py-12">
+        <div className="mx-auto max-w-6xl px-4">
+          <div className="max-w-3xl">
+            <h2 className="text-2xl font-bold tracking-tight">Start here</h2>
+            <div className="mt-4 h-1 w-16 rounded-full slt-accent-bg"></div>
 
-      <p className="mt-6 text-lg text-slate-600">
-        If your journey in SLT is new, you can start here, one of my very
-        first LinkedIn posts and by far my most popular.
-      </p>
+            <p className="mt-6 text-lg text-slate-600">
+              If your journey in SLT is new, you can start here, one of my very
+              first LinkedIn posts and by far my most popular.
+            </p>
 
-      <p className="mt-4 text-slate-600">
-        Alternatively you can dive straight into the content in articles
-        and themes.
-      </p>
+            <p className="mt-4 text-slate-600">
+              Alternatively you can dive straight into the content in articles
+              and themes.
+            </p>
 
-      <div className="mt-6 flex flex-wrap gap-3">
-        <Link
-          to="/start-here/my-procurement-roadmap"
-          className="inline-flex items-center justify-center rounded-2xl bg-amber-500 px-5 py-3 text-sm font-semibold text-white shadow hover:bg-amber-600 transition"
-        >
-          My Procurement Roadmap
-        </Link>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <Link
+                to="/start-here/my-procurement-roadmap"
+                className="inline-flex items-center justify-center rounded-2xl bg-amber-500 px-5 py-3 text-sm font-semibold text-white shadow hover:bg-amber-600 transition"
+              >
+                My Procurement Roadmap
+              </Link>
 
-        <button
-          type="button"
-          onClick={() => {
-            const el = document.getElementById("stories");
-            if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
-          }}
-          className="inline-flex items-center justify-center rounded-2xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-800 hover:bg-slate-100 transition"
-        >
-          Browse Articles &amp; Themes
-        </button>
-      </div>
-    </div>
-  </div>
-</section>
-
-            <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-              <p className="text-sm font-semibold text-slate-900">
-                A quick way to understand how I think about Procurement
-              </p>
-              <p className="mt-2 text-sm text-slate-600">
-                The strategic + practical lessons that shaped my approach over decades
-                in the trenches.
-              </p>
-              <div className="mt-4 text-xs font-semibold text-amber-600">
-                Start with the roadmap →
-              </div>
+              <button
+                type="button"
+                onClick={() => {
+                  const el = document.getElementById("stories");
+                  if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+                }}
+                className="inline-flex items-center justify-center rounded-2xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-800 hover:bg-slate-100 transition"
+              >
+                Browse Articles &amp; Themes
+              </button>
             </div>
           </div>
         </div>
@@ -545,7 +522,10 @@ export default function App() {
       <Route path="/" element={<Home />} />
 
       {/* Start here */}
-      <Route path="/start-here/my-procurement-roadmap" element={<MyProcurementRoadmap />} />
+      <Route
+        path="/start-here/my-procurement-roadmap"
+        element={<MyProcurementRoadmap />}
+      />
 
       <Route
         path="/stories/organisational-performance"
@@ -568,30 +548,12 @@ export default function App() {
         path="/stories/talent-development-strategy"
         element={<TalentDevelopmentStrategy />}
       />
-      <Route
-        path="/stories/idiots-guide-procurement"
-        element={<IdiotsGuideProcurement />}
-      />
-      <Route
-        path="/stories/hierarchy-of-success"
-        element={<HierarchyOfSuccess />}
-      />
-      <Route
-        path="/stories/control-the-controllables"
-        element={<ControlTheControllables />}
-      />
-      <Route
-        path="/stories/i-dont-believe-in-regrets"
-        element={<IDontBelieveInRegrets />}
-      />
-      <Route
-        path="/stories/powerpoint-warrior-problem"
-        element={<PowerPointWarriorProblem />}
-      />
-      <Route
-        path="/stories/respect-costs-nothing"
-        element={<RespectCostsNothing />}
-      />
+      <Route path="/stories/idiots-guide-procurement" element={<IdiotsGuideProcurement />} />
+      <Route path="/stories/hierarchy-of-success" element={<HierarchyOfSuccess />} />
+      <Route path="/stories/control-the-controllables" element={<ControlTheControllables />} />
+      <Route path="/stories/i-dont-believe-in-regrets" element={<IDontBelieveInRegrets />} />
+      <Route path="/stories/powerpoint-warrior-problem" element={<PowerPointWarriorProblem />} />
+      <Route path="/stories/respect-costs-nothing" element={<RespectCostsNothing />} />
       <Route
         path="/stories/strategic-vs-operational-procurement"
         element={<StrategicVsOperationalProcurement />}
@@ -608,10 +570,7 @@ export default function App() {
         path="/stories/stop-thinking-it-start-saying-it"
         element={<StopThinkingItStartSayingIt />}
       />
-      <Route
-        path="/stories/the-art-of-influencing"
-        element={<TheArtOfInfluencing />}
-      />
+      <Route path="/stories/the-art-of-influencing" element={<TheArtOfInfluencing />} />
       <Route
         path="/stories/discipline-above-everything-else"
         element={<DisciplineAboveEverythingElse />}
@@ -625,14 +584,12 @@ export default function App() {
         path="/stories/procurement-as-value/procurement-built-on-trust"
         element={<ProcurementBuiltOnTrust />}
       />
-      <Route
-        path="/stories/procurement-as-value/nec-vs-fidic"
-        element={<NecVsFidic />}
-      />
+      <Route path="/stories/procurement-as-value/nec-vs-fidic" element={<NecVsFidic />} />
       <Route
         path="/stories/procurement-as-value/strategic-sourcing-pitfalls"
         element={<StrategicSourcingPitfalls />}
       />
+
       <Route
         path="/stories/organisational-performance/work-life-balance-leadership"
         element={<WorkLifeBalanceLeadership />}
@@ -641,6 +598,7 @@ export default function App() {
         path="/stories/organisational-performance/high-performing-team"
         element={<HighPerformingTeam />}
       />
+
       <Route
         path="/stories/procurement-as-value/supplier-reduction-consolidation"
         element={<SupplierReductionConsolidation />}
