@@ -1,5 +1,6 @@
 import React, { useMemo } from "react";
 import { Routes, Route, Link } from "react-router-dom";
+import TheTrueCostOfMaverickSpend from "./pages/TheTrueCostOfMaverickSpend";
 
 import OrganisationalPerformance from "./pages/OrganisationalPerformance";
 import PersonalDevelopment from "./pages/PersonalDevelopment";
@@ -627,6 +628,10 @@ export default function App() {
         path="/stories/procurement-as-value/why-procurement-governance-is-a-non-negotiable"
         element={<WhyProcurementGovernanceIsANonNegotiable />}
       />
+      <Route
+  path="/stories/procurement-as-value/the-true-cost-of-maverick-spend"
+  element={<TheTrueCostOfMaverickSpend />}
+/>
     </Routes>
   );
 }
