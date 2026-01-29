@@ -139,7 +139,7 @@ function Home() {
   return (
     <div className="min-h-screen bg-white text-slate-900">
       {/* Header */}
-      <header className="sticky top-0 z-50 w-full border-b border-slate-200/70 bg-white/85 backdrop-blur-xl">
+<header className="sticky top-0 z-50 w-full border-b border-slate-200 bg-white">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
           <div className="flex items-center gap-3">
             <img src="/logo1.png" alt="SLT logo" className="h-24 w-auto" />
