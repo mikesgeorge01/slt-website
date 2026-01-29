@@ -11,7 +11,7 @@ export default function ProcurementAsValue() {
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            <img src="/logo.png" alt="SLT logo" className="h-14 w-auto" />
+            <img src="/logo1.png" alt="SLT logo" className="h-14 w-auto" />
             <div className="hidden sm:block">
               <div className="text-sm font-semibold leading-tight">SLT</div>
               <div className="text-xs text-slate-500 leading-tight">
