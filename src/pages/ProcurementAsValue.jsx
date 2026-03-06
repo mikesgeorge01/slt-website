@@ -9,6 +9,7 @@ export default function ProcurementAsValue() {
       {/* Simple Header */}
       <header className="sticky top-0 z-50 w-full border-b border-slate-200/70 bg-white/85 backdrop-blur-xl">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+          
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
             <img src="/logo1.png" alt="SLT logo" className="h-14 w-auto" />
@@ -46,6 +47,7 @@ export default function ProcurementAsValue() {
         <h1 className="text-4xl font-extrabold tracking-tight">
           Procurement As Value
         </h1>
+
         <div className="mt-4 h-1 w-20 rounded-full bg-amber-500"></div>
 
         <p className="mt-6 max-w-3xl text-lg text-slate-600">
@@ -54,6 +56,7 @@ export default function ProcurementAsValue() {
 
         {/* Cards */}
         <div className="mt-10 grid gap-4 md:grid-cols-2">
+
           <Link
             to="/stories/idiots-guide-procurement"
             className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition block"
@@ -119,7 +122,7 @@ export default function ProcurementAsValue() {
             className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition block"
           >
             <div className="text-sm font-semibold">
-              Supplier Reduction &amp; Consolidation
+              Supplier Reduction & Consolidation
             </div>
             <div className="mt-2 text-xs font-semibold text-amber-600">
               Read more →
@@ -150,7 +153,6 @@ export default function ProcurementAsValue() {
             </div>
           </Link>
 
-          {/* ✅ NEW ARTICLE */}
           <Link
             to="/stories/procurement-as-value/why-procurement-governance-is-a-non-negotiable"
             className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition block"
@@ -164,16 +166,30 @@ export default function ProcurementAsValue() {
           </Link>
 
           <Link
-  to="/stories/procurement-as-value/the-true-cost-of-maverick-spend"
-  className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition block"
->
-  <div className="text-sm font-semibold">
-    The True Cost of Maverick Spend (and how to reduce it)
-  </div>
-  <div className="mt-2 text-xs font-semibold text-amber-600">
-    Read more →
-  </div>
-</Link>
+            to="/stories/procurement-as-value/the-true-cost-of-maverick-spend"
+            className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition block"
+          >
+            <div className="text-sm font-semibold">
+              The True Cost of Maverick Spend (and how to reduce it)
+            </div>
+            <div className="mt-2 text-xs font-semibold text-amber-600">
+              Read more →
+            </div>
+          </Link>
+
+          {/* ⭐ NEW ARTICLE */}
+          <Link
+            to="/stories/procurement-as-value/sole-source-justification-procurement"
+            className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition block"
+          >
+            <div className="text-sm font-semibold">
+              What Does a Good Sole Source Justification Look Like in Procurement?
+            </div>
+            <div className="mt-2 text-xs font-semibold text-amber-600">
+              Read more →
+            </div>
+          </Link>
+
         </div>
       </div>
     </div>

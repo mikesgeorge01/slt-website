@@ -1,3 +1,4 @@
+import SoleSourceJustification from "./pages/SoleSourceJustification";
 import EmployeeSurveys from "./pages/EmployeeSurveys";
 import WhyOneToOnesMatter from "./pages/WhyOneToOnesMatter";
 import HowGreatLeadersTalk from "./pages/HowGreatLeadersTalk";
@@ -646,6 +647,10 @@ export default function App() {
 <Route
   path="/stories/organisational-performance/employee-surveys-valuable-insight-or-token-gesture"
   element={<EmployeeSurveys />}
+/>
+<Route
+  path="/stories/procurement-as-value/sole-source-justification-procurement"
+  element={<SoleSourceJustification />}
 />
     </Routes>
   );
