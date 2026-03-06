@@ -128,7 +128,7 @@ export default function LeadershipThatInspires() {
             </div>
           </Link>
 
-          {/* ✅ NEW Live article – Every Success Story Starts by Ignoring “You Can’t” */}
+          {/* Live article – Every Success Story Starts by Ignoring “You Can’t” */}
           <Link
             to="/stories/leadership-that-inspires/every-success-story-starts-by-ignoring-you-cant"
             className="block rounded-3xl border border-slate-200 bg-white p-6 hover:shadow-md transition"
@@ -145,16 +145,35 @@ export default function LeadershipThatInspires() {
             </div>
           </Link>
 
+          {/* Live article – How Great Leaders Talk */}
           <Link
-  to="/stories/leadership-that-inspires/how-great-leaders-talk"
-  className="block rounded-3xl border border-slate-200 bg-white p-6 hover:shadow-md transition"
->
-  <div className="text-sm font-semibold">How Great Leaders Talk</div>
-  <p className="mt-2 text-sm text-slate-600">
-    15 real examples of language that builds trust, clarity, and accountability.
-  </p>
-  <div className="mt-4 text-xs font-semibold text-amber-600">Read more →</div>
-</Link>
+            to="/stories/leadership-that-inspires/how-great-leaders-talk"
+            className="block rounded-3xl border border-slate-200 bg-white p-6 hover:shadow-md transition"
+          >
+            <div className="text-sm font-semibold">How Great Leaders Talk</div>
+            <p className="mt-2 text-sm text-slate-600">
+              15 real examples of language that builds trust, clarity, and accountability.
+            </p>
+            <div className="mt-4 text-xs font-semibold text-amber-600">
+              Read more →
+            </div>
+          </Link>
+
+          {/* Live article – Why 1-1s Are the Most Important Meeting in My Calendar */}
+          <Link
+            to="/stories/leadership-that-inspires/why-1-1s-are-the-most-important-meeting-in-my-calendar"
+            className="block rounded-3xl border border-slate-200 bg-white p-6 hover:shadow-md transition"
+          >
+            <div className="text-sm font-semibold">
+              Why 1-1s Are the Most Important Meeting in My Calendar
+            </div>
+            <p className="mt-2 text-sm text-slate-600">
+              Why great leadership starts with proper conversations, not just status updates.
+            </p>
+            <div className="mt-4 text-xs font-semibold text-amber-600">
+              Read more →
+            </div>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,3 +1,4 @@
+import WhyOneToOnesMatter from "./pages/WhyOneToOnesMatter";
 import HowGreatLeadersTalk from "./pages/HowGreatLeadersTalk";
 import React, { useMemo } from "react";
 import { Routes, Route, Link } from "react-router-dom";
@@ -636,6 +637,10 @@ export default function App() {
 <Route
   path="/stories/leadership-that-inspires/how-great-leaders-talk"
   element={<HowGreatLeadersTalk />}
+/>
+<Route
+  path="/stories/leadership-that-inspires/why-1-1s-are-the-most-important-meeting-in-my-calendar"
+  element={<WhyOneToOnesMatter />}
 />
     </Routes>
   );
